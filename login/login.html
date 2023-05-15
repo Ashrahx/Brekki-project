@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow: hidden;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+	<link rel="stylesheet" href="style.css">
+    <style>
+        .logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 160px;
+        height: 160px;
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.php"><img src="../img/logo.png" alt="Logo" class="logo"></a>
+    <section>
+        <aside>
+            <h1>Login</h1>
+            <form action="login.php" method="post">
+                <input type="text" id="username" name="username" placeholder="Username"/>
+                <input type="password" id="password" name="password" placeholder="Password"/>
+                <button type="submit">Sign In</button>
+            </form>
+            <p>You do not have an account? <a href="register.html">Sign Up</a></p>
+        </aside>
+    </section>
+</body>
+</html>

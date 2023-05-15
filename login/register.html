@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <script src="https://kit.fontawesome.com/7af13692c6.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
+	<style>
+        html, body {
+           overflow: hidden;
+        }
+        .logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 160px;
+        height: 160px;
+        }
+		#password-wrapper {
+			position: relative;
+		}
+
+		#show-password {
+			position: absolute;
+			top: 50%;
+			right: 10px;
+			transform: translateY(-50%);
+			cursor: pointer;
+		}
+
+        #show-password.fa-eye-slash:before {
+            content: "\f070"
+        }
+
+        #accept-terms-wrapper {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        #accept-terms {
+            margin-right: 10px;
+            appearance: none;
+            -webkit-appearance: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid #ccc;
+            outline: none;
+            cursor: pointer;
+        }
+
+        #accept-terms:checked {
+            border-color: #007bff;
+            background-color: #007bff;
+        }
+
+        #accept-terms:checked::after {
+            content: "\f00c";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            font-size: 14px;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #accept-terms-label {
+            font-size: 14px;
+            font-weight: bold;
+            font-family: 'Gilroy',sans-serif;
+        }
+
+        .terms label a{
+            font-family: 'Gilroy Light', sans-serif;
+            font-size: 13px;
+            color: #1f3877;
+            text-decoration: underline;
+        }
+
+        .terms label a:hover {
+             text-decoration: none;
+             color: #3760c3;
+        }
+	</style>
+</head>
+<body>
+    <a href="../index.php"><img src="../img/logo.png" alt="Logo" class="logo"></a>
+    <section>
+        <aside>
+            <h1>Register</h1>
+            <form action="register.php" method="post">
+                <input type="text" id="username" name="username" placeholder="Username"  pattern="[a-zA-Z0-9]{4,12}" required/>
+                <div id="password-wrapper">
+                    <input type="password" id="password" name="password" placeholder="Password"  pattern=".{8,}" required/>
+                    <i id="show-password" class="fa fa-eye"></i>
+                </div>
+                <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm your password" required>
+                <br><br>
+                <div class="terms">
+                        <input type="checkbox" name="terms" required>
+                        <label for="terms"><a href="terms.html">I accept the terms and conditions</a></label>
+                </div>
+                
+                <br>
+                <button type="submit">Sign Up</button>
+            </form>
+            <p>Do you already have an account? <a href="login.html">Sign in</a></p>
+        </aside>
+    </section>
+    <script>
+        const passwordInput = document.querySelector('#password');
+        const showPasswordButton = document.querySelector('#show-password');
+        showPasswordButton.addEventListener('click', () => {
+            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', type);
+            showPasswordButton.classList.toggle('fa-eye-slash');
+        });
+    </script>
+</body>
+</html>
