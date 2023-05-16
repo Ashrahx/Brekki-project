@@ -1,10 +1,10 @@
 <?php
-session_start();
+	session_start();
 
-if (!isset($_SESSION['username'])) {
-	header('Location: ./login/login.html');
-	exit();
-}
+	if (!isset($_SESSION['username'])) {
+		header('Location: ./login/login.html');
+		exit();
+	}
 ?>
 
 <!DOCTYPE html>
@@ -88,23 +88,283 @@ if (!isset($_SESSION['username'])) {
 			<div class="container-categories">
 				<div class="card-category category-break">
 					<p>Breakfasts</p>
-					<span><a href="#best">Show more</a></span>
+					<span><a href="#breakfasts">Show more</a></span>
 				</div>
-				<div class="card-category category-lunch">
-					<p>Lunch</p>
-					<span><a href="#best">Show more</a></span>
+				<div class="card-category category-brunch">
+					<p>Brunch</p>
+					<span><a href="#brunch">Show more</a></span>
 				</div>
 				<div class="card-category category-drink">
 					<p>Drinks</p>
-					<span><a href="#best">Show more</a></span>
+					<span><a href="#drinks">Show more</a></span>
 				</div>
 			</div>
 		</section>
 
 			<form method="POST" action="" >
+				<!--Breakfasts-->
+				<section class="container top-products">
+					<h1 class="heading-1" id="breakfasts">Breakfasts</h1>
+					<div class="container-products">
+						<!--Breakfast 1-->
+						<div class="card-product">
+							<div class="container-img">
+								<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
+								<div class="button-group">
+									<span>
+										<i class="fa-regular fa-eye"></i>
+									</span>
+									<span>
+										<i class="fa-regular fa-heart"></i>
+									</span>
+									<span>
+										<i class="fa-solid fa-code-compare"></i>
+									</span>
+								</div>
+							</div>
+							<div class="content-card-product">
+								<div class="stars">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-regular fa-star"></i>
+								</div>
+								<h3>Cafe Irish</h3>
+								<span class="add-cart">
+									<i class="fa-solid fa-basket-shopping"></i>
+								</span>
+								<p class="price">$4.60</p>
+							</div>
+						</div>
+						<!--Breakfast 2-->
+						<div class="card-product">
+							<div class="container-img">
+								<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
+								<div class="button-group">
+									<span>
+										<i class="fa-regular fa-eye"></i>
+									</span>
+									<span>
+										<i class="fa-regular fa-heart"></i>
+									</span>
+									<span>
+										<i class="fa-solid fa-code-compare"></i>
+									</span>
+								</div>
+							</div>
+							<div class="content-card-product">
+								<div class="stars">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-regular fa-star"></i>
+								</div>
+								<h3>Cafe Irish</h3>
+								<span class="add-cart">
+									<i class="fa-solid fa-basket-shopping"></i>
+								</span>
+								<p class="price">$4.60</p>
+							</div>
+						</div>
+						<!--Breakfast 3-->
+						<div class="card-product">
+							<div class="container-img">
+								<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
+								<div class="button-group">
+									<span>
+										<i class="fa-regular fa-eye"></i>
+									</span>
+									<span>
+										<i class="fa-regular fa-heart"></i>
+									</span>
+									<span>
+										<i class="fa-solid fa-code-compare"></i>
+									</span>
+								</div>
+							</div>
+							<div class="content-card-product">
+								<div class="stars">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-regular fa-star"></i>
+								</div>
+								<h3>Cafe Irish</h3>
+								<span class="add-cart">
+									<i class="fa-solid fa-basket-shopping"></i>
+								</span>
+								<p class="price">$4.60</p>
+							</div>
+						</div>
+						<!--Breakfast 4-->
+						<div class="card-product">
+							<div class="container-img">
+								<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
+								<div class="button-group">
+									<span>
+										<i class="fa-regular fa-eye"></i>
+									</span>
+									<span>
+										<i class="fa-regular fa-heart"></i>
+									</span>
+									<span>
+										<i class="fa-solid fa-code-compare"></i>
+									</span>
+								</div>
+							</div>
+							<div class="content-card-product">
+								<div class="stars">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-regular fa-star"></i>
+								</div>
+								<h3>Cafe Irish</h3>
+								<span class="add-cart">
+									<i class="fa-solid fa-basket-shopping"></i>
+								</span>
+								<p class="price">$4.60</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!--Brunch-->
+				<section class="container top-products">
+					<h1 class="heading-1" id="brunch">Brunch</h1>
+					<div class="container-products">
+						<!--Brunch 1-->
+						<div class="card-product">
+							<div class="container-img">
+								<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
+								<div class="button-group">
+									<span>
+										<i class="fa-regular fa-eye"></i>
+									</span>
+									<span>
+										<i class="fa-regular fa-heart"></i>
+									</span>
+									<span>
+										<i class="fa-solid fa-code-compare"></i>
+									</span>
+								</div>
+							</div>
+							<div class="content-card-product">
+								<div class="stars">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-regular fa-star"></i>
+								</div>
+								<h3>Cafe Irish</h3>
+								<span class="add-cart">
+									<i class="fa-solid fa-basket-shopping"></i>
+								</span>
+								<p class="price">$4.60</p>
+							</div>
+						</div>
+						<!--Brunch 2-->
+						<div class="card-product">
+							<div class="container-img">
+								<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
+								<div class="button-group">
+									<span>
+										<i class="fa-regular fa-eye"></i>
+									</span>
+									<span>
+										<i class="fa-regular fa-heart"></i>
+									</span>
+									<span>
+										<i class="fa-solid fa-code-compare"></i>
+									</span>
+								</div>
+							</div>
+							<div class="content-card-product">
+								<div class="stars">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-regular fa-star"></i>
+								</div>
+								<h3>Cafe Irish</h3>
+								<span class="add-cart" >
+									<i class="fa-solid fa-basket-shopping"></i>
+								</span>
+								<p class="price">$4.60</p>
+							</div>
+						</div>
+						<!--Brunch 3-->
+						<div class="card-product">
+							<div class="container-img">
+								<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
+								<div class="button-group">
+									<span>
+										<i class="fa-regular fa-eye"></i>
+									</span>
+									<span>
+										<i class="fa-regular fa-heart"></i>
+									</span>
+									<span>
+										<i class="fa-solid fa-code-compare"></i>
+									</span>
+								</div>
+							</div>
+							<div class="content-card-product">
+								<div class="stars">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-regular fa-star"></i>
+								</div>
+								<h3>Cafe Irish</h3>
+								<span class="add-cart">
+									<i class="fa-solid fa-basket-shopping"></i>
+								</span>
+								<p class="price">$4.60</p>
+							</div>
+						</div>
+						<!--Brunch 4-->
+						<div class="card-product">
+							<div class="container-img">
+								<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
+								<div class="button-group">
+									<span>
+										<i class="fa-regular fa-eye"></i>
+									</span>
+									<span>
+										<i class="fa-regular fa-heart"></i>
+									</span>
+									<span>
+										<i class="fa-solid fa-code-compare"></i>
+									</span>
+								</div>
+							</div>
+							<div class="content-card-product">
+								<div class="stars">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-regular fa-star"></i>
+								</div>
+								<h3>Cafe Irish</h3>
+								<span class="add-cart">
+									<i class="fa-solid fa-basket-shopping"></i>
+								</span>
+								<p class="price">$4.60</p>
+							</div>
+						</div>
+					</div>
+				</section>
 				<!--Drinks-->
 				<section class="container top-products">
-					<h1 class="heading-1" id="product">Drinks</h1>
+					<h1 class="heading-1" id="drinks">Drinks</h1>
 					<div class="container-products">
 						<!--Drink 1-->
 						<div class="card-product">
@@ -232,139 +492,9 @@ if (!isset($_SESSION['username'])) {
 						</div>
 					</div>
 				</section>
-				<!--Food-->
-				<section class="container top-products">
-					<h1 class="heading-1" id="product">Food</h1>
-					<div class="container-products">
-						<!--Food 1-->
-						<div class="card-product">
-							<div class="container-img">
-								<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
-								<div class="button-group">
-									<span>
-										<i class="fa-regular fa-eye"></i>
-									</span>
-									<span>
-										<i class="fa-regular fa-heart"></i>
-									</span>
-									<span>
-										<i class="fa-solid fa-code-compare"></i>
-									</span>
-								</div>
-							</div>
-							<div class="content-card-product">
-								<div class="stars">
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-regular fa-star"></i>
-								</div>
-								<h3>Cafe Irish</h3>
-								<span class="add-cart">
-									<i class="fa-solid fa-basket-shopping"></i>
-								</span>
-								<p class="price">$4.60</p>
-							</div>
-						</div>
-						<!--Food 2-->
-						<div class="card-product">
-							<div class="container-img">
-								<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
-								<div class="button-group">
-									<span>
-										<i class="fa-regular fa-eye"></i>
-									</span>
-									<span>
-										<i class="fa-regular fa-heart"></i>
-									</span>
-									<span>
-										<i class="fa-solid fa-code-compare"></i>
-									</span>
-								</div>
-							</div>
-							<div class="content-card-product">
-								<div class="stars">
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-regular fa-star"></i>
-								</div>
-								<h3>Cafe Irish</h3>
-								<span class="add-cart">
-									<i class="fa-solid fa-basket-shopping"></i>
-								</span>
-								<p class="price">$4.60</p>
-							</div>
-						</div>
-						<!--Food 3-->
-						<div class="card-product">
-							<div class="container-img">
-								<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
-								<div class="button-group">
-									<span>
-										<i class="fa-regular fa-eye"></i>
-									</span>
-									<span>
-										<i class="fa-regular fa-heart"></i>
-									</span>
-									<span>
-										<i class="fa-solid fa-code-compare"></i>
-									</span>
-								</div>
-							</div>
-							<div class="content-card-product">
-								<div class="stars">
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-regular fa-star"></i>
-								</div>
-								<h3>Cafe Irish</h3>
-								<span class="add-cart">
-									<i class="fa-solid fa-basket-shopping"></i>
-								</span>
-								<p class="price">$4.60</p>
-							</div>
-						</div>
-						<!--Food 4-->
-						<div class="card-product">
-							<div class="container-img">
-								<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
-								<div class="button-group">
-									<span>
-										<i class="fa-regular fa-eye"></i>
-									</span>
-									<span>
-										<i class="fa-regular fa-heart"></i>
-									</span>
-									<span>
-										<i class="fa-solid fa-code-compare"></i>
-									</span>
-								</div>
-							</div>
-							<div class="content-card-product">
-								<div class="stars">
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-regular fa-star"></i>
-								</div>
-								<h3>Cafe Irish</h3>
-								<span class="add-cart">
-									<i class="fa-solid fa-basket-shopping"></i>
-								</span>
-								<p class="price">$4.60</p>
-							</div>
-						</div>
-					</div>
-				</section>
 				<!--Specials-->
 				<section class="container top-products">
-					<h1 class="heading-1" id="product">Drinks</h1>
+					<h1 class="heading-1" id="product">Specials</h1>
 					<div class="container-products">
 						<!--Special 1-->
 						<div class="card-product">
@@ -453,7 +583,7 @@ if (!isset($_SESSION['username'])) {
 									<i class="fa-regular fa-star"></i>
 								</div>
 								<h3>Cafe Irish</h3>
-								<span class="add-cart">
+								<span class="add-cart"  onclick="prompt()">
 									<i class="fa-solid fa-basket-shopping"></i>
 								</span>
 								<p class="price">$4.60</p>
@@ -484,7 +614,7 @@ if (!isset($_SESSION['username'])) {
 									<i class="fa-regular fa-star"></i>
 								</div>
 								<h3>Cafe Irish</h3>
-								<span class="add-cart">
+								<span class="add-cart"  onclick="prompt()">
 									<i class="fa-solid fa-basket-shopping"></i>
 								</span>
 								<p class="price">$4.60</p>
@@ -492,8 +622,8 @@ if (!isset($_SESSION['username'])) {
 						</div>
 					</div>
 				</section>
+				<input type="submit" name="ok" value="Make order" class="addToCart">
 			</form>
-
 		
 		</section>
 	</main>
@@ -541,5 +671,10 @@ if (!isset($_SESSION['username'])) {
 		</div>
 	</footer>
 </body>
-
 </html>
+
+<script>
+	prompt(){
+		alert("Hola");
+	}
+</script>

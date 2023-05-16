@@ -681,6 +681,15 @@ html {
 }
 
 
+/* SUBMIT */
+.addToCart{
+	display: block;
+	margin: 30px auto 30px auto;
+	padding: 1rem;
+	font-size: 3rem;
+}
+
+
 /* FOOTER */
 
 
