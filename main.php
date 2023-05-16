@@ -37,7 +37,7 @@ if (!isset($_SESSION['username'])) {
 					</button>
 				</form>
 				<div id="results-container" style="display: block;">
-						<a href="">
+						<a href="#breakfasts">
 							<div id="results"></div>
 						</a>
 					</div>
@@ -626,7 +626,7 @@ if (!isset($_SESSION['username'])) {
 					</div>
 				</div>
 			</section>
-			<input type="submit" name="ok" value="Make order" class="addToCart">
+			<input type="submit" name="ok" value="Make order" class="order">
 		</form>
 
 		</section>

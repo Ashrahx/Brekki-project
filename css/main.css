@@ -7,6 +7,10 @@
 	--button-color: #f2b611;
 }
 
+body{
+	background-color: var(--background-color);
+}
+
 html {
 	font-size: 62.5%;
 	font-family: 'Poppins', sans-serif;
@@ -682,12 +686,26 @@ html {
 
 
 /* SUBMIT */
-.addToCart{
+.order {
 	display: block;
-	margin: 30px auto 30px auto;
-	padding: 1rem;
-	font-size: 3rem;
-}
+	background-color: #337ab7;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	font-size: 16px;
+	cursor: pointer;
+	margin: 30px auto;
+  }
+  
+  .order:hover {
+	background-color: #23527c;
+  }
+  
+  .order:focus {
+	outline: none;
+	box-shadow: 0 0 0 3px rgba(51, 122, 183, 0.3);
+  }
 
 
 /* FOOTER */
@@ -824,21 +842,32 @@ html {
 }
 
 /* Search */
-#contenedor-resultados a{
+#results-container a{
     text-decoration: none;
-    color: #ffff;
-    
+    color: #000000;
+  }
+
+  #results-container {
+	display: block;
+	position: absolute;
+	top: 10%; /* Ajusta la posición vertical según sea necesario */
+	left: 50%; /* Ajusta la posición horizontal según sea necesario */
+	width: 10%; /* Ajusta el ancho según sea necesario */
   }
   
-  #resultados {
+  #results {
     max-width: 600px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+	margin: 0 auto;
+	display: block; /* Cambiado de "flex" a "block" */
+	justify-content: space-between;
+	background-color: #ffffff; /* Agrega un color de fondo para diferenciarlo */
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 10px;
+	box-shadow: 0px 0px 5px #ccc;
   }
   
-  .resultado {
+  .result {
     width: 350px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
@@ -847,12 +876,12 @@ html {
     box-shadow: 0px 0px 5px #ccc;
   }
   
-  .resultado h2 {
+  .result h3 {
     font-size: 0.9rem;
     margin: 0 0 10px;
   }
   
-  .resultado img {
+  .result img {
     width: 350px;
     height: 100px;
     display: block;

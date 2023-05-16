@@ -8,115 +8,115 @@
     },
     {
       "name": "Omelette",
-      "image": "./images/chilaquiles.jpg",
+      "image": "./img/omelette.jpg",
       "category": "Breakfast",
       "price": "$78.00"
     },
     {
       "name": "Hot cakes",
-      "image": "./images/hotcakes.jpg",
+      "image": "./img/hotcakes.jpg",
       "category": "Breakfast",
       "price": "$35.00"
     },
     {
       "name": "Waffles",
-      "image": "./images/waffles.jpg",
+      "image": "./img/waffles.jpg",
       "category": "Breakfast",
       "price": "$45.00"
     },
     {
       "name": "Torta",
-      "image": "./images/torta.jpg",
+      "image": "./img/torta.jpg",
       "category": "Brunch",
       "price": 1
     },
     {
       "name": "Molletes",
-      "image": "./images/molletes.jpg",
+      "image": "./img/molletes.jpg",
       "category": "Brunch",
       "price": "$35.00"
     },
     {
       "name": "Chilaquiles",
-      "image": "./images/sandwich.jpg",
+      "image": "./img/sandwich.jpg",
       "category": "Brunch",
       "price": "$25"
     },
     {
       "name": "Gorditas",
-      "image": "./images/gorditas.jpg",
+      "image": "./img/gorditas.jpg",
       "category": "Brunch",
       "price": "$14"
     },
     {
       "name": "Pork rind",
-      "image": "./images/pork.jpg",
+      "image": "./img/pork.jpg",
       "category": "Brunch",
       "price": "$90.00"
     },
     {
       "name": "Jamaica drink",
-      "image": "./images/jamaica.jpg",
+      "image": "./img/jamaica.jpg",
       "category": "Drink",
       "price": "$25"
     },
     {
       "name": "Green drink",
-      "image": "./images/greenjuice.jpg",
+      "image": "./img/greenjuice.jpg",
       "category": "Drink",
       "price": "$25"
     },
     {
       "name": "Orange juice",
-      "image": "./images/orange.jpg",
+      "image": "./img/orange.jpg",
       "category": "Drink",
       "price": "$25"
     },
     {
       "name": "Strawberry juice",
-      "image": "./images/strawberry.jpg",
+      "image": "./img/strawberry.jpg",
       "category": "Drink",
       "price": "$25"
     },
     {
       "name": "Papaya, grapefruit and cactus juice",
-      "image": "./images/pgc.jpg",
+      "image": "./img/pgc.jpg",
       "category": "Drink",
       "price": "$25"
     },
     {
       "name": "Chocolate smoothie",
-      "image": "./images/chocolate.jpg",
+      "image": "./img/chocolate.jpg",
       "category": "Drink",
       "price": "$34.00"
     },
     {
       "name": "Pumpkin smoothie",
-      "image": "./images/pumpkin.jpg",
+      "image": "./img/pumpkin.jpg",
       "category": "Drink",
       "price": "$35.00"
     },
     {
       "name": "Mango smoothie",
-      "image": "./images/mango.jpg",
+      "image": "./img/mango.jpg",
       "category": "Drink",
       "price": "$32.00"
     },
     {
       "name": "Banana smoothie",
-      "image": "./images/banana.jpg",
+      "image": "./img/banana.jpg",
       "category": "Drink",
       "price": "$30.00"
     },
     {
       "name": "Triple Chocolate Detox Smoothie",
-      "image": "./images/tcds.jpg",
+      "image": "./img/tcds.jpg",
       "category": "Drink",
       "price": "$40.00"
     },
     {
       "name": "Strawberry smoothie",
-      "image": "./images/strawberry-s.jpg",
+      "image": "./img/strawberry-s.jpg",
       "category": "Drink",
       "price": "$45.00"
     }
