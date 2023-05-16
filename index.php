@@ -78,8 +78,8 @@
 					<p>Breakfats</p>
 					<span><a href="./login/register.html">Show more</a></span>
 				</div>
-				<div class="card-category category-lunch">
-					<p>Lunch</p>
+				<div class="card-category category-brunch">
+					<p>Brunch</p>
 					<span><a href="./login/register.html">Show more</a></span>
 				</div>
 				<div class="card-category category-drink">
@@ -122,7 +122,7 @@
 					<p class="title-footer">Information</p>
 					<ul>
 						<li><a href="#">Privacy policies</a></li>
-						<li><a href="./login/terms.html">Terms and conditions</a></li>
+						<li><a href="./login/terms.html" target="_blank">Terms and conditions</a></li>
 					</ul>
 				</div>
 
@@ -137,10 +137,10 @@
 				<div class="social-icons">
 					<p class="title-footer">Social medias</p>
 					<br>
-					<a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
-					<a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
-					<a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
-					<a href="https://github.com"><i class="fa-brands fa-github"></i></a>
+					<a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+					<a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+					<a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+					<a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
 				</div>
 			</div>
 
