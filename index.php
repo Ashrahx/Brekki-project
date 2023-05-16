@@ -45,7 +45,7 @@
 				<i class="fa-solid fa-truck"></i>
 				<div class="feature-content">
 					<span>Free shipping</span>
-					<p>At a request greater than $ 150</p>
+					<p>At a request greater than $ 200</p>
 				</div>
 			</div>
 			<div class="card-feature">
