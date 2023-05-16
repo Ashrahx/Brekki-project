@@ -636,25 +636,25 @@ if (!isset($_SESSION['username'])) {
 		<div class="container container-footer">
 			<div class="menu-footer">
 				<div class="contact-info">
-					<p class="title-footer">Información de Contacto</p>
+					<p class="title-footer">Contact information</p>
 					<ul>
 						<a href="mailto:studiosapteosis@gmail.com">studiosapteosis@gmail.com</a>
 					</ul>
 				</div>
 
 				<div class="information">
-					<p class="title-footer">Información</p>
+					<p class="title-footer">Information</p>
 					<ul>
-						<li><a href="#">Politicas de Privacidad</a></li>
+						<li><a href="#">Privacy policies</a></li>
 						<li><a href="./login/terms.html">Términos y condiciones</a></li>
 					</ul>
 				</div>
 
 				<div class="my-account">
-					<p class="title-footer">Mi cuenta</p>
+					<p class="title-footer">My account</p>
 
 					<ul>
-						<li><a href="#">Historial de ordenes</a></li>
+						<li><a href="#">Ordenes history</a></li>
 					</ul>
 				</div>
 
@@ -668,12 +668,12 @@ if (!isset($_SESSION['username'])) {
 			</div>
 
 			<div class="copyright">
-				<p>By Ashrah &copy; 2033</p>
+				<p>By Ashrah &copy; 2023</p>
 
 				<img src="img/payment.png" alt="Pagos" />
 			</div>
 		</div>
 	</footer> 
 </body>
-<script src="./script.js"></script>
+<script src="./main.js"></script>
 </html>
