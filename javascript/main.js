@@ -30,7 +30,7 @@ function searchProduct() {
         elemento.innerHTML = `
           <img src="${product.image}"><h3>${product.name}</h3>
           <p>Category: ${product.category}</p>
-          <p>Cost: ${product.price}</p>
+          <p>Price: ${product.price}</p>
         `;
         results.appendChild(elemento);
       }

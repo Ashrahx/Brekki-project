@@ -675,5 +675,5 @@ if (!isset($_SESSION['username'])) {
 		</div>
 	</footer> 
 </body>
-<script src="./main.js"></script>
+<script src="./javascript/main.js"></script>
 </html>
