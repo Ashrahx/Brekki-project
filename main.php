@@ -1,21 +1,21 @@
 <?php
-	session_start();
+session_start();
 
-	if (!isset($_SESSION['username'])) {
-		header('Location: ./login/login.html');
-		exit();
-	}
+if (!isset($_SESSION['username'])) {
+	header('Location: ./login/login.html');
+	exit();
+}
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8"/>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>BREKKI</title>
-	<link rel="stylesheet" href="./css/main.css"/>
+	<link rel="stylesheet" href="./css/main.css" />
 	<script src="https://kit.fontawesome.com/7af13692c6.js" crossorigin="anonymous"></script>
 </head>
 
@@ -30,13 +30,17 @@
 					<li><a href="mailto:studiosapteosis@gmail.com">Contact us</a></li>
 					<li><a href="#product">Products</a></li>
 				</ul>
-
-				<form class="search-form">
-					<input type="search" placeholder="Search..." />
+				<form class="search-form" id="search">
+					<input type="search" id="input-search" oninput="searchProduct()" placeholder="Search...">
 					<button class="btn-search">
 						<i class="fa-solid fa-magnifying-glass"></i>
 					</button>
 				</form>
+				<div id="results-container" style="display: block;">
+						<a href="">
+							<div id="results"></div>
+						</a>
+					</div>
 				<div class="container-user">
 					<i class="fa-solid fa-cart-shopping"></i>
 					<a href="./login/logout.php" class="logout"><i class="fa-solid fa-door-open"></i> Log out</i></a>
@@ -101,530 +105,530 @@
 			</div>
 		</section>
 
-			<form method="POST" action="" >
-				<!--Breakfasts-->
-				<section class="container top-products">
-					<h1 class="heading-1" id="breakfasts">Breakfasts</h1>
-					<div class="container-products">
-						<!--Breakfast 1-->
-						<div class="card-product">
-							<div class="container-img">
-								<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
-								<div class="button-group">
-									<span>
-										<i class="fa-regular fa-eye"></i>
-									</span>
-									<span>
-										<i class="fa-regular fa-heart"></i>
-									</span>
-									<span>
-										<i class="fa-solid fa-code-compare"></i>
-									</span>
-								</div>
-							</div>
-							<div class="content-card-product">
-								<div class="stars">
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-regular fa-star"></i>
-								</div>
-								<h3>Cafe Irish</h3>
-								<span class="add-cart">
-									<i class="fa-solid fa-basket-shopping"></i>
+		<form method="POST" action="">
+			<!--Breakfasts-->
+			<section class="container top-products">
+				<h1 class="heading-1" id="breakfasts">Breakfasts</h1>
+				<div class="container-products">
+					<!--Breakfast 1-->
+					<div class="card-product">
+						<div class="container-img">
+							<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
 								</span>
-								<p class="price">$4.60</p>
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-code-compare"></i>
+								</span>
 							</div>
 						</div>
-						<!--Breakfast 2-->
-						<div class="card-product">
-							<div class="container-img">
-								<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
-								<div class="button-group">
-									<span>
-										<i class="fa-regular fa-eye"></i>
-									</span>
-									<span>
-										<i class="fa-regular fa-heart"></i>
-									</span>
-									<span>
-										<i class="fa-solid fa-code-compare"></i>
-									</span>
-								</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
 							</div>
-							<div class="content-card-product">
-								<div class="stars">
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-regular fa-star"></i>
-								</div>
-								<h3>Cafe Irish</h3>
-								<span class="add-cart">
-									<i class="fa-solid fa-basket-shopping"></i>
-								</span>
-								<p class="price">$4.60</p>
-							</div>
-						</div>
-						<!--Breakfast 3-->
-						<div class="card-product">
-							<div class="container-img">
-								<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
-								<div class="button-group">
-									<span>
-										<i class="fa-regular fa-eye"></i>
-									</span>
-									<span>
-										<i class="fa-regular fa-heart"></i>
-									</span>
-									<span>
-										<i class="fa-solid fa-code-compare"></i>
-									</span>
-								</div>
-							</div>
-							<div class="content-card-product">
-								<div class="stars">
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-regular fa-star"></i>
-								</div>
-								<h3>Cafe Irish</h3>
-								<span class="add-cart">
-									<i class="fa-solid fa-basket-shopping"></i>
-								</span>
-								<p class="price">$4.60</p>
-							</div>
-						</div>
-						<!--Breakfast 4-->
-						<div class="card-product">
-							<div class="container-img">
-								<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
-								<div class="button-group">
-									<span>
-										<i class="fa-regular fa-eye"></i>
-									</span>
-									<span>
-										<i class="fa-regular fa-heart"></i>
-									</span>
-									<span>
-										<i class="fa-solid fa-code-compare"></i>
-									</span>
-								</div>
-							</div>
-							<div class="content-card-product">
-								<div class="stars">
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-regular fa-star"></i>
-								</div>
-								<h3>Cafe Irish</h3>
-								<span class="add-cart">
-									<i class="fa-solid fa-basket-shopping"></i>
-								</span>
-								<p class="price">$4.60</p>
-							</div>
+							<h3>Cafe Irish</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">$4.60</p>
 						</div>
 					</div>
-				</section>
-				<!--Brunch-->
-				<section class="container top-products">
-					<h1 class="heading-1" id="brunch">Brunch</h1>
-					<div class="container-products">
-						<!--Brunch 1-->
-						<div class="card-product">
-							<div class="container-img">
-								<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
-								<div class="button-group">
-									<span>
-										<i class="fa-regular fa-eye"></i>
-									</span>
-									<span>
-										<i class="fa-regular fa-heart"></i>
-									</span>
-									<span>
-										<i class="fa-solid fa-code-compare"></i>
-									</span>
-								</div>
-							</div>
-							<div class="content-card-product">
-								<div class="stars">
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-regular fa-star"></i>
-								</div>
-								<h3>Cafe Irish</h3>
-								<span class="add-cart">
-									<i class="fa-solid fa-basket-shopping"></i>
+					<!--Breakfast 2-->
+					<div class="card-product">
+						<div class="container-img">
+							<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
 								</span>
-								<p class="price">$4.60</p>
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-code-compare"></i>
+								</span>
 							</div>
 						</div>
-						<!--Brunch 2-->
-						<div class="card-product">
-							<div class="container-img">
-								<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
-								<div class="button-group">
-									<span>
-										<i class="fa-regular fa-eye"></i>
-									</span>
-									<span>
-										<i class="fa-regular fa-heart"></i>
-									</span>
-									<span>
-										<i class="fa-solid fa-code-compare"></i>
-									</span>
-								</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
 							</div>
-							<div class="content-card-product">
-								<div class="stars">
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-regular fa-star"></i>
-								</div>
-								<h3>Cafe Irish</h3>
-								<span class="add-cart" >
-									<i class="fa-solid fa-basket-shopping"></i>
-								</span>
-								<p class="price">$4.60</p>
-							</div>
-						</div>
-						<!--Brunch 3-->
-						<div class="card-product">
-							<div class="container-img">
-								<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
-								<div class="button-group">
-									<span>
-										<i class="fa-regular fa-eye"></i>
-									</span>
-									<span>
-										<i class="fa-regular fa-heart"></i>
-									</span>
-									<span>
-										<i class="fa-solid fa-code-compare"></i>
-									</span>
-								</div>
-							</div>
-							<div class="content-card-product">
-								<div class="stars">
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-regular fa-star"></i>
-								</div>
-								<h3>Cafe Irish</h3>
-								<span class="add-cart">
-									<i class="fa-solid fa-basket-shopping"></i>
-								</span>
-								<p class="price">$4.60</p>
-							</div>
-						</div>
-						<!--Brunch 4-->
-						<div class="card-product">
-							<div class="container-img">
-								<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
-								<div class="button-group">
-									<span>
-										<i class="fa-regular fa-eye"></i>
-									</span>
-									<span>
-										<i class="fa-regular fa-heart"></i>
-									</span>
-									<span>
-										<i class="fa-solid fa-code-compare"></i>
-									</span>
-								</div>
-							</div>
-							<div class="content-card-product">
-								<div class="stars">
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-regular fa-star"></i>
-								</div>
-								<h3>Cafe Irish</h3>
-								<span class="add-cart">
-									<i class="fa-solid fa-basket-shopping"></i>
-								</span>
-								<p class="price">$4.60</p>
-							</div>
+							<h3>Cafe Irish</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">$4.60</p>
 						</div>
 					</div>
-				</section>
-				<!--Drinks-->
-				<section class="container top-products">
-					<h1 class="heading-1" id="drinks">Drinks</h1>
-					<div class="container-products">
-						<!--Drink 1-->
-						<div class="card-product">
-							<div class="container-img">
-								<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
-								<div class="button-group">
-									<span>
-										<i class="fa-regular fa-eye"></i>
-									</span>
-									<span>
-										<i class="fa-regular fa-heart"></i>
-									</span>
-									<span>
-										<i class="fa-solid fa-code-compare"></i>
-									</span>
-								</div>
-							</div>
-							<div class="content-card-product">
-								<div class="stars">
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-regular fa-star"></i>
-								</div>
-								<h3>Cafe Irish</h3>
-								<span class="add-cart">
-									<i class="fa-solid fa-basket-shopping"></i>
+					<!--Breakfast 3-->
+					<div class="card-product">
+						<div class="container-img">
+							<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
 								</span>
-								<p class="price">$4.60</p>
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-code-compare"></i>
+								</span>
 							</div>
 						</div>
-						<!--Drink 2-->
-						<div class="card-product">
-							<div class="container-img">
-								<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
-								<div class="button-group">
-									<span>
-										<i class="fa-regular fa-eye"></i>
-									</span>
-									<span>
-										<i class="fa-regular fa-heart"></i>
-									</span>
-									<span>
-										<i class="fa-solid fa-code-compare"></i>
-									</span>
-								</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
 							</div>
-							<div class="content-card-product">
-								<div class="stars">
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-regular fa-star"></i>
-								</div>
-								<h3>Cafe Irish</h3>
-								<span class="add-cart">
-									<i class="fa-solid fa-basket-shopping"></i>
-								</span>
-								<p class="price">$4.60</p>
-							</div>
-						</div>
-						<!--Drink 3-->
-						<div class="card-product">
-							<div class="container-img">
-								<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
-								<div class="button-group">
-									<span>
-										<i class="fa-regular fa-eye"></i>
-									</span>
-									<span>
-										<i class="fa-regular fa-heart"></i>
-									</span>
-									<span>
-										<i class="fa-solid fa-code-compare"></i>
-									</span>
-								</div>
-							</div>
-							<div class="content-card-product">
-								<div class="stars">
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-regular fa-star"></i>
-								</div>
-								<h3>Cafe Irish</h3>
-								<span class="add-cart">
-									<i class="fa-solid fa-basket-shopping"></i>
-								</span>
-								<p class="price">$4.60</p>
-							</div>
-						</div>
-						<!--Drink 4-->
-						<div class="card-product">
-							<div class="container-img">
-								<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
-								<div class="button-group">
-									<span>
-										<i class="fa-regular fa-eye"></i>
-									</span>
-									<span>
-										<i class="fa-regular fa-heart"></i>
-									</span>
-									<span>
-										<i class="fa-solid fa-code-compare"></i>
-									</span>
-								</div>
-							</div>
-							<div class="content-card-product">
-								<div class="stars">
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-regular fa-star"></i>
-								</div>
-								<h3>Cafe Irish</h3>
-								<span class="add-cart">
-									<i class="fa-solid fa-basket-shopping"></i>
-								</span>
-								<p class="price">$4.60</p>
-							</div>
+							<h3>Cafe Irish</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">$4.60</p>
 						</div>
 					</div>
-				</section>
-				<!--Specials-->
-				<section class="container top-products">
-					<h1 class="heading-1" id="product">Specials</h1>
-					<div class="container-products">
-						<!--Special 1-->
-						<div class="card-product">
-							<div class="container-img">
-								<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
-								<div class="button-group">
-									<span>
-										<i class="fa-regular fa-eye"></i>
-									</span>
-									<span>
-										<i class="fa-regular fa-heart"></i>
-									</span>
-									<span>
-										<i class="fa-solid fa-code-compare"></i>
-									</span>
-								</div>
-							</div>
-							<div class="content-card-product">
-								<div class="stars">
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-regular fa-star"></i>
-								</div>
-								<h3>Cafe Irish</h3>
-								<span class="add-cart">
-									<i class="fa-solid fa-basket-shopping"></i>
+					<!--Breakfast 4-->
+					<div class="card-product">
+						<div class="container-img">
+							<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
 								</span>
-								<p class="price">$4.60</p>
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-code-compare"></i>
+								</span>
 							</div>
 						</div>
-						<!--Special 2-->
-						<div class="card-product">
-							<div class="container-img">
-								<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
-								<div class="button-group">
-									<span>
-										<i class="fa-regular fa-eye"></i>
-									</span>
-									<span>
-										<i class="fa-regular fa-heart"></i>
-									</span>
-									<span>
-										<i class="fa-solid fa-code-compare"></i>
-									</span>
-								</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
 							</div>
-							<div class="content-card-product">
-								<div class="stars">
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-regular fa-star"></i>
-								</div>
-								<h3>Cafe Irish</h3>
-								<span class="add-cart">
-									<i class="fa-solid fa-basket-shopping"></i>
-								</span>
-								<p class="price">$4.60</p>
-							</div>
-						</div>
-						<!--Special 3-->
-						<div class="card-product">
-							<div class="container-img">
-								<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
-								<div class="button-group">
-									<span>
-										<i class="fa-regular fa-eye"></i>
-									</span>
-									<span>
-										<i class="fa-regular fa-heart"></i>
-									</span>
-									<span>
-										<i class="fa-solid fa-code-compare"></i>
-									</span>
-								</div>
-							</div>
-							<div class="content-card-product">
-								<div class="stars">
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-regular fa-star"></i>
-								</div>
-								<h3>Cafe Irish</h3>
-								<span class="add-cart"  onclick="prompt()">
-									<i class="fa-solid fa-basket-shopping"></i>
-								</span>
-								<p class="price">$4.60</p>
-							</div>
-						</div>
-						<!--Special 4-->
-						<div class="card-product">
-							<div class="container-img">
-								<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
-								<div class="button-group">
-									<span>
-										<i class="fa-regular fa-eye"></i>
-									</span>
-									<span>
-										<i class="fa-regular fa-heart"></i>
-									</span>
-									<span>
-										<i class="fa-solid fa-code-compare"></i>
-									</span>
-								</div>
-							</div>
-							<div class="content-card-product">
-								<div class="stars">
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-solid fa-star"></i>
-									<i class="fa-regular fa-star"></i>
-								</div>
-								<h3>Cafe Irish</h3>
-								<span class="add-cart"  onclick="prompt()">
-									<i class="fa-solid fa-basket-shopping"></i>
-								</span>
-								<p class="price">$4.60</p>
-							</div>
+							<h3>Cafe Irish</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">$4.60</p>
 						</div>
 					</div>
-				</section>
-				<input type="submit" name="ok" value="Make order" class="addToCart">
-			</form>
-		
+				</div>
+			</section>
+			<!--Brunch-->
+			<section class="container top-products">
+				<h1 class="heading-1" id="brunch">Brunch</h1>
+				<div class="container-products">
+					<!--Brunch 1-->
+					<div class="card-product">
+						<div class="container-img">
+							<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-code-compare"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3>Cafe Irish</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">$4.60</p>
+						</div>
+					</div>
+					<!--Brunch 2-->
+					<div class="card-product">
+						<div class="container-img">
+							<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-code-compare"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3>Cafe Irish</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">$4.60</p>
+						</div>
+					</div>
+					<!--Brunch 3-->
+					<div class="card-product">
+						<div class="container-img">
+							<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-code-compare"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3>Cafe Irish</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">$4.60</p>
+						</div>
+					</div>
+					<!--Brunch 4-->
+					<div class="card-product">
+						<div class="container-img">
+							<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-code-compare"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3>Cafe Irish</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">$4.60</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--Drinks-->
+			<section class="container top-products">
+				<h1 class="heading-1" id="drinks">Drinks</h1>
+				<div class="container-products">
+					<!--Drink 1-->
+					<div class="card-product">
+						<div class="container-img">
+							<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-code-compare"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3>Cafe Irish</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">$4.60</p>
+						</div>
+					</div>
+					<!--Drink 2-->
+					<div class="card-product">
+						<div class="container-img">
+							<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-code-compare"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3>Cafe Irish</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">$4.60</p>
+						</div>
+					</div>
+					<!--Drink 3-->
+					<div class="card-product">
+						<div class="container-img">
+							<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-code-compare"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3>Cafe Irish</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">$4.60</p>
+						</div>
+					</div>
+					<!--Drink 4-->
+					<div class="card-product">
+						<div class="container-img">
+							<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-code-compare"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3>Cafe Irish</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">$4.60</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--Specials-->
+			<section class="container top-products">
+				<h1 class="heading-1" id="product">Specials</h1>
+				<div class="container-products">
+					<!--Special 1-->
+					<div class="card-product">
+						<div class="container-img">
+							<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-code-compare"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3>Cafe Irish</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">$4.60</p>
+						</div>
+					</div>
+					<!--Special 2-->
+					<div class="card-product">
+						<div class="container-img">
+							<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-code-compare"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3>Cafe Irish</h3>
+							<span class="add-cart">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">$4.60</p>
+						</div>
+					</div>
+					<!--Special 3-->
+					<div class="card-product">
+						<div class="container-img">
+							<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-code-compare"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3>Cafe Irish</h3>
+							<span class="add-cart" onclick="prompt()">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">$4.60</p>
+						</div>
+					</div>
+					<!--Special 4-->
+					<div class="card-product">
+						<div class="container-img">
+							<img src="img/cafe-irish.jpg" alt="Cafe Irish" />
+							<div class="button-group">
+								<span>
+									<i class="fa-regular fa-eye"></i>
+								</span>
+								<span>
+									<i class="fa-regular fa-heart"></i>
+								</span>
+								<span>
+									<i class="fa-solid fa-code-compare"></i>
+								</span>
+							</div>
+						</div>
+						<div class="content-card-product">
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<h3>Cafe Irish</h3>
+							<span class="add-cart" onclick="prompt()">
+								<i class="fa-solid fa-basket-shopping"></i>
+							</span>
+							<p class="price">$4.60</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<input type="submit" name="ok" value="Make order" class="addToCart">
+		</form>
+
 		</section>
 	</main>
 
@@ -669,12 +673,7 @@
 				<img src="img/payment.png" alt="Pagos" />
 			</div>
 		</div>
-	</footer>
+	</footer> 
 </body>
+<script src="./script.js"></script>
 </html>
-
-<script>
-	prompt(){
-		alert("Hola");
-	}
-</script>
