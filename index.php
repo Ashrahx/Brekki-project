@@ -90,7 +90,7 @@
 		</section>
 
 		<section id="about" class="container about-category">
-			<h1 class="heading-1">Welcome to Brekki</h1>
+			<h1 class="heading-1">Welcome to BREKKI</h1>
 			<br>
 			<div>
 			<p> We are a breakfast page dedicated to offering delicious and nutritious options to start your day with energy and vitality.In Brekki we believe that breakfast is the most important food of the day and we are passionate to help you start your morning with your right foot.</p>
@@ -99,6 +99,12 @@
 			<p> In addition, in Brekki we care about the environment and work in sustainable practices at each stage of our production and distribution chain.We strive to minimize our environmental impact and work with biodegradable and recyclable materials.</p><br>
 			<p> Thanks for visiting Brekki.We hope you find delicious and nutritious options that help you start your day with energy and vitality. If you have any questions or comments, do not hesitate to contact us.Have an excellent day! </p>
 			</div>
+			<br><br>
+			<h1 class="heading-1">Location <i class="fa-solid fa-location-dot"></i></h1>
+			<br>
+			<div>
+				<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d4256.390494291359!2d-103.43155367318622!3d25.575667938805932!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1684170024271!5m2!1ses-419!2smx" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
 		</section>
   </div>
 		<br><br>
@@ -106,25 +112,25 @@
 		<div class="container container-footer">
 			<div class="menu-footer">
 				<div class="contact-info">
-					<p class="title-footer">Información de Contacto</p>
+					<p class="title-footer">Contact information</p>
 					<ul>
 						<a href="mailto:studiosapteosis@gmail.com">studiosapteosis@gmail.com</a>
 					</ul>
 				</div>
 
 				<div class="information">
-					<p class="title-footer">Información</p>
+					<p class="title-footer">Information</p>
 					<ul>
-						<li><a href="#">Politicas de Privacidad</a></li>
-						<li><a href="./login/terms.html">Términos y condiciones</a></li>
+						<li><a href="#">Privacy policies</a></li>
+						<li><a href="./login/terms.html">Terms and conditions</a></li>
 					</ul>
 				</div>
 
 				<div class="my-account">
-					<p class="title-footer">Mi cuenta</p>
+					<p class="title-footer">My account</p>
 
 					<ul>
-						<li><a href="#">Historial de ordenes</a></li>
+						<li><a href="#">Order historial</a></li>
 					</ul>
 				</div>
 
@@ -139,7 +145,7 @@
 			</div>
 
 			<div class="copyright">
-				<p>By Ashrah &copy; 2033</p>
+				<p>By Ashrah &copy; 2023</p>
 
 				<img src="img/payment.png" alt="Pagos" />
 			</div>
