@@ -352,6 +352,10 @@ html {
 	padding: 3rem;
 }
 
+.map{
+	border: 0.1px solid black;
+}
+
 /* FOOTER */
 
 
