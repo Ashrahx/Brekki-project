@@ -13,8 +13,20 @@
       "price": "$78.00"
     },
     {
+      "name": "Avena",
+      "image": "./img/avena.jpg",
+      "category": "Breakfast",
+      "price": "$40.00"
+    },
+    {
+      "name": "Sandwich",
+      "image": "./img/sandwich.jpg",
+      "category": "Breakfast",
+      "price": "$25.00"
+    },
+    {
       "name": "Hot cakes",
-      "image": "./img/hotcakes.jpg",
+      "image": "./img/hotcakes.png",
       "category": "Breakfast",
       "price": "$35.00"
     },
@@ -28,7 +40,7 @@
       "name": "Torta",
       "image": "./img/torta.jpg",
       "category": "Brunch",
-      "price": 1
+      "price": "$65.00"
     },
     {
       "name": "Molletes",
@@ -38,7 +50,7 @@
     },
     {
       "name": "Chilaquiles",
-      "image": "./img/sandwich.jpg",
+      "image": "./img/Chilaquiles.jpg",
       "category": "Brunch",
       "price": "$25"
     },
@@ -79,8 +91,8 @@
       "price": "$25"
     },
     {
-      "name": "Papaya, grapefruit and cactus juice",
-      "image": "./img/pgc.jpg",
+      "name": "Grapefruit juice",
+      "image": "./img/grapefruit.jpg",
       "category": "Drink",
       "price": "$25"
     },
@@ -109,13 +121,13 @@
       "price": "$30.00"
     },
     {
-      "name": "Triple Chocolate Detox Smoothie",
-      "image": "./img/tcds.jpg",
+      "name": "Blueberry Peach Smoothie",
+      "image": "./img/blue.jpg",
       "category": "Drink",
       "price": "$40.00"
     },
     {
-      "name": "Strawberry smoothie",
+      "name": "Strawberry banana smoothie",
       "image": "./img/strawberry-s.jpg",
       "category": "Drink",
       "price": "$45.00"

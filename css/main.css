@@ -881,9 +881,9 @@ html {
     margin: 0 0 10px;
   }
   
-  .result img {
-    width: 350px;
-    height: 100px;
+  .results img {
+    width: 60px;
+    height: 30px;
     display: block;
     margin: 0 auto 10px;
   }
