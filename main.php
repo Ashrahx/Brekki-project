@@ -556,7 +556,7 @@ if (!isset($_SESSION['username'])) {
 							<span class="add-cart">
 								<i class="fa-solid fa-basket-shopping"></i>
 							</span>
-							<p class="price">$4.60</p>
+							<p class="price">$25</p>
 						</div>
 					</div>
 					<!--Drink 4-->
@@ -587,7 +587,7 @@ if (!isset($_SESSION['username'])) {
 							<span class="add-cart">
 								<i class="fa-solid fa-basket-shopping"></i>
 							</span>
-							<p class="price">$4.60</p>
+							<p class="price">$25</p>
 						</div>
 					</div>
 					<!--Drink 5-->
@@ -618,7 +618,7 @@ if (!isset($_SESSION['username'])) {
 							<span class="add-cart">
 								<i class="fa-solid fa-basket-shopping"></i>
 							</span>
-							<p class="price">$4.60</p>
+							<p class="price">$25</p>
 						</div>
 					</div>
 					<!--Drink 6-->
@@ -649,7 +649,7 @@ if (!isset($_SESSION['username'])) {
 							<span class="add-cart">
 								<i class="fa-solid fa-basket-shopping"></i>
 							</span>
-							<p class="price">$4.60</p>
+							<p class="price">$34.00</p>
 						</div>
 					</div>
 					<!--Drink 7-->
@@ -680,7 +680,7 @@ if (!isset($_SESSION['username'])) {
 							<span class="add-cart">
 								<i class="fa-solid fa-basket-shopping"></i>
 							</span>
-							<p class="price">$4.60</p>
+							<p class="price">$35.00</p>
 						</div>
 					</div>
 					<!--Drink 8-->
@@ -711,7 +711,7 @@ if (!isset($_SESSION['username'])) {
 							<span class="add-cart">
 								<i class="fa-solid fa-basket-shopping"></i>
 							</span>
-							<p class="price">$4.60</p>
+							<p class="price">$32.00</p>
 						</div>
 					</div>
 					<!--Drink 9-->
@@ -742,7 +742,7 @@ if (!isset($_SESSION['username'])) {
 							<span class="add-cart">
 								<i class="fa-solid fa-basket-shopping"></i>
 							</span>
-							<p class="price">$4.60</p>
+							<p class="price">$30.00</p>
 						</div>
 					</div>
 					<!--Drink 10-->
@@ -773,7 +773,7 @@ if (!isset($_SESSION['username'])) {
 							<span class="add-cart">
 								<i class="fa-solid fa-basket-shopping"></i>
 							</span>
-							<p class="price">$4.60</p>
+							<p class="price">$40.00</p>
 						</div>
 					</div>
 					<!--Drink 11-->
@@ -804,7 +804,7 @@ if (!isset($_SESSION['username'])) {
 							<span class="add-cart">
 								<i class="fa-solid fa-basket-shopping"></i>
 							</span>
-							<p class="price">$4.60</p>
+							<p class="price">$45.00</p>
 						</div>
 					</div>
 				</div>
