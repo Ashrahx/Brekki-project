@@ -136,9 +136,11 @@ if (!isset($_SESSION['username'])) {
 								<i class="fa-regular fa-star"></i>
 							</div>
 							<h3>Eggs with bacon</h3>
-							<span class="add-cart">
-								<label for="breakfast1"><i class="fa-solid fa-basket-shopping"></i></label>
-							</span>
+							<label for="breakfast1">
+								<span class="add-cart" id="cartChecked">
+									<i class="fa-solid fa-basket-shopping"></i>
+								</span>
+							</label>
 							<p class="price">$79.00</p>
 						</div>
 					</div>
@@ -167,9 +169,11 @@ if (!isset($_SESSION['username'])) {
 								<i class="fa-regular fa-star"></i>
 							</div>
 							<h3>Omelette</h3>
-							<span class="add-cart">
-								<label for="breakfast2"><i class="fa-solid fa-basket-shopping"></i></label>
-							</span>
+							<label for="breakfast2">
+								<span class="add-cart" id="cartChecked">
+									<i class="fa-solid fa-basket-shopping"></i>
+								</span>
+							</label>
 							<p class="price">$78.00</p>
 						</div>
 					</div>
@@ -198,9 +202,11 @@ if (!isset($_SESSION['username'])) {
 								<i class="fa-regular fa-star"></i>
 							</div>
 							<h3>Avena</h3>
-							<span class="add-cart">
-								<label for="breakfast3"><i class="fa-solid fa-basket-shopping"></i></label>
-							</span>
+							<label for="breakfast3">
+								<span class="add-cart" id="cartChecked">
+									<i class="fa-solid fa-basket-shopping"></i>
+								</span>
+							</label>
 							<p class="price">$40.00</p>
 						</div>
 					</div>
@@ -229,9 +235,11 @@ if (!isset($_SESSION['username'])) {
 								<i class="fa-regular fa-star"></i>
 							</div>
 							<h3>Sandwich</h3>
-							<span class="add-cart">
-								<label for="breakfast4"><i class="fa-solid fa-basket-shopping"></i></label>
-							</span>
+							<label for="food4">
+								<span class="add-cart" id="cartChecked">
+									<i class="fa-solid fa-basket-shopping"></i>
+								</span>
+							</label>
 							<p class="price">$25.00</p>
 						</div>
 					</div>
@@ -260,9 +268,11 @@ if (!isset($_SESSION['username'])) {
 								<i class="fa-regular fa-star"></i>
 							</div>
 							<h3>Hot cakes</h3>
-							<span class="add-cart">
-								<label for="breakfast4"><i class="fa-solid fa-basket-shopping"></i></label>
-							</span>
+							<label for="food5">
+								<span class="add-cart" id="cartChecked">
+									<i class="fa-solid fa-basket-shopping"></i>
+								</span>
+							</label>
 							<p class="price">$35.00</p>
 						</div>
 					</div>
@@ -291,9 +301,11 @@ if (!isset($_SESSION['username'])) {
 								<i class="fa-regular fa-star"></i>
 							</div>
 							<h3>Waffles</h3>
-							<span class="add-cart">
-								<label for="breakfast4"><i class="fa-solid fa-basket-shopping"></i></label>
-							</span>
+							<label for="breakfast6">
+								<span class="add-cart" id="cartChecked">
+									<i class="fa-solid fa-basket-shopping"></i>
+								</span>
+							</label>
 							<p class="price">$45.00</p>
 						</div>
 					</div>
@@ -328,9 +340,11 @@ if (!isset($_SESSION['username'])) {
 								<i class="fa-regular fa-star"></i>
 							</div>
 							<h3>Torta</h3>
-							<span class="add-cart">
-								<label for="drink1"><i class="fa-solid fa-basket-shopping"></i></label>
-							</span>
+							<label for="brunch1">
+								<span class="add-cart" id="cartChecked">
+									<i class="fa-solid fa-basket-shopping"></i>
+								</span>
+							</label>
 							<p class="price">$65.00</p>
 						</div>
 					</div>
@@ -359,9 +373,11 @@ if (!isset($_SESSION['username'])) {
 								<i class="fa-regular fa-star"></i>
 							</div>
 							<h3>Molletes</h3>
-							<span class="add-cart">
-								<label for="drink2"><i class="fa-solid fa-basket-shopping"></i></label>
-							</span>
+							<label for="brunch2">
+								<span class="add-cart" id="cartChecked">
+									<i class="fa-solid fa-basket-shopping"></i>
+								</span>
+							</label>
 							<p class="price">$35.00</p>
 						</div>
 					</div>
@@ -390,9 +406,11 @@ if (!isset($_SESSION['username'])) {
 								<i class="fa-regular fa-star"></i>
 							</div>
 							<h3>Chilaquiles</h3>
-							<span class="add-cart">
-								<label for="drink3"><i class="fa-solid fa-basket-shopping"></i></label>
-							</span>
+							<label for="brunch3">
+								<span class="add-cart" id="cartChecked">
+									<i class="fa-solid fa-basket-shopping"></i>
+								</span>
+							</label>
 							<p class="price">$25</p>
 						</div>
 					</div>
@@ -421,9 +439,11 @@ if (!isset($_SESSION['username'])) {
 								<i class="fa-regular fa-star"></i>
 							</div>
 							<h3>Gorditas</h3>
-							<span class="add-cart">
-								<label for="drink4"><i class="fa-solid fa-basket-shopping"></i></label>
-							</span>
+							<label for="brunch4">
+								<span class="add-cart" id="cartChecked">
+									<i class="fa-solid fa-basket-shopping"></i>
+								</span>
+							</label>
 							<p class="price">$14</p>
 						</div>
 					</div>
@@ -452,8 +472,8 @@ if (!isset($_SESSION['username'])) {
 								<i class="fa-regular fa-star"></i>
 							</div>
 							<h3>Pork rind</h3>
-							<label for="drink5">
-								<span class="add-cart">
+							<label for="brunch5">
+								<span class="add-cart" id="cartChecked">
 									<i class="fa-solid fa-basket-shopping"></i>
 								</span>
 							</label>
@@ -491,9 +511,11 @@ if (!isset($_SESSION['username'])) {
 								<i class="fa-regular fa-star"></i>
 							</div>
 							<h3>Jamica</h3>
-							<span class="add-cart">
-								<i class="fa-solid fa-basket-shopping"></i>
-							</span>
+							<label for="drink1">
+								<span class="add-cart" id="cartChecked">
+									<i class="fa-solid fa-basket-shopping"></i>
+								</span>
+							</label>
 							<p class="price">$25</p>
 						</div>
 					</div>
@@ -522,9 +544,11 @@ if (!isset($_SESSION['username'])) {
 								<i class="fa-regular fa-star"></i>
 							</div>
 							<h3>Green Juice</h3>
-							<span class="add-cart">
-								<i class="fa-solid fa-basket-shopping"></i>
-							</span>
+							<label for="drink2">
+								<span class="add-cart" id="cartChecked">
+									<i class="fa-solid fa-basket-shopping"></i>
+								</span>
+							</label>
 							<p class="price">$25</p>
 						</div>
 					</div>
@@ -553,9 +577,11 @@ if (!isset($_SESSION['username'])) {
 								<i class="fa-regular fa-star"></i>
 							</div>
 							<h3>Orange juice</h3>
-							<span class="add-cart">
-								<i class="fa-solid fa-basket-shopping"></i>
-							</span>
+							<label for="drink3">
+								<span class="add-cart" id="cartChecked">
+									<i class="fa-solid fa-basket-shopping"></i>
+								</span>
+							</label>
 							<p class="price">$25</p>
 						</div>
 					</div>
@@ -584,9 +610,11 @@ if (!isset($_SESSION['username'])) {
 								<i class="fa-regular fa-star"></i>
 							</div>
 							<h3>Strawberry juice</h3>
-							<span class="add-cart">
-								<i class="fa-solid fa-basket-shopping"></i>
-							</span>
+							<label for="drink4">
+								<span class="add-cart" id="cartChecked">
+									<i class="fa-solid fa-basket-shopping"></i>
+								</span>
+							</label>
 							<p class="price">$25</p>
 						</div>
 					</div>
@@ -615,9 +643,11 @@ if (!isset($_SESSION['username'])) {
 								<i class="fa-regular fa-star"></i>
 							</div>
 							<h3>Grapefruit juice</h3>
-							<span class="add-cart">
-								<i class="fa-solid fa-basket-shopping"></i>
-							</span>
+							<label for="drink5">
+								<span class="add-cart" id="cartChecked">
+									<i class="fa-solid fa-basket-shopping"></i>
+								</span>
+							</label>
 							<p class="price">$25</p>
 						</div>
 					</div>
@@ -646,9 +676,11 @@ if (!isset($_SESSION['username'])) {
 								<i class="fa-regular fa-star"></i>
 							</div>
 							<h3>Chocolate Smoothie</h3>
-							<span class="add-cart">
-								<i class="fa-solid fa-basket-shopping"></i>
-							</span>
+							<label for="drink6">
+								<span class="add-cart" id="cartChecked">
+									<i class="fa-solid fa-basket-shopping"></i>
+								</span>
+							</label>
 							<p class="price">$34.00</p>
 						</div>
 					</div>
@@ -677,9 +709,11 @@ if (!isset($_SESSION['username'])) {
 								<i class="fa-regular fa-star"></i>
 							</div>
 							<h3>Pumpkin smoothie</h3>
-							<span class="add-cart">
-								<i class="fa-solid fa-basket-shopping"></i>
-							</span>
+							<label for="drink7">
+								<span class="add-cart" id="cartChecked">
+									<i class="fa-solid fa-basket-shopping"></i>
+								</span>
+							</label>
 							<p class="price">$35.00</p>
 						</div>
 					</div>
@@ -708,9 +742,11 @@ if (!isset($_SESSION['username'])) {
 								<i class="fa-regular fa-star"></i>
 							</div>
 							<h3>Mango smoothie</h3>
-							<span class="add-cart">
-								<i class="fa-solid fa-basket-shopping"></i>
-							</span>
+							<label for="drink8">
+								<span class="add-cart" id="cartChecked">
+									<i class="fa-solid fa-basket-shopping"></i>
+								</span>
+							</label>
 							<p class="price">$32.00</p>
 						</div>
 					</div>
@@ -739,9 +775,11 @@ if (!isset($_SESSION['username'])) {
 								<i class="fa-regular fa-star"></i>
 							</div>
 							<h3>Banana smoothie</h3>
-							<span class="add-cart">
-								<i class="fa-solid fa-basket-shopping"></i>
-							</span>
+							<label for="drink9">
+								<span class="add-cart" id="cartChecked">
+									<i class="fa-solid fa-basket-shopping"></i>
+								</span>
+							</label>
 							<p class="price">$30.00</p>
 						</div>
 					</div>
@@ -770,9 +808,11 @@ if (!isset($_SESSION['username'])) {
 								<i class="fa-regular fa-star"></i>
 							</div>
 							<h3>Blueberry Peach Smoothie</h3>
-							<span class="add-cart">
-								<i class="fa-solid fa-basket-shopping"></i>
-							</span>
+							<label for="drink10">
+								<span class="add-cart" id="cartChecked">
+									<i class="fa-solid fa-basket-shopping"></i>
+								</span>
+							</label>
 							<p class="price">$40.00</p>
 						</div>
 					</div>
@@ -801,9 +841,12 @@ if (!isset($_SESSION['username'])) {
 								<i class="fa-regular fa-star"></i>
 							</div>
 							<h3>Strawberry banana smoothie</h3>
-							<span class="add-cart">
-								<i class="fa-solid fa-basket-shopping"></i>
-							</span>
+							<label for="drink11">
+								<span class="add-cart" id="cartChecked">
+									<i class="fa-solid fa-basket-shopping"></i>
+								</span>
+							</label>
+							<p id="inCart" style="display:none">In cart</p>
 							<p class="price">$45.00</p>
 						</div>
 					</div>
@@ -812,28 +855,33 @@ if (!isset($_SESSION['username'])) {
 
 			<div>
 				<!--Breakfasts-->
-				<input type="checkbox" id="breakfast1">
-				<input type="checkbox" id="breakfast2">
-				<input type="checkbox" id="breakfast3">
-				<input type="checkbox" id="breakfast4">
+				<input type="checkbox" class="cartChechbox" id="breakfast1">
+				<input type="checkbox" class="cartChechbox" id="breakfast2">
+				<input type="checkbox" class="cartChechbox" id="breakfast3">
+				<input type="checkbox" class="cartChechbox" id="breakfast4">
+				<!--Breakfasts price-->
+				<input type="checkbox" class="cartChechbox" id="breakfast1"><p>H</p>
+				<input type="checkbox" class="cartChechbox" id="breakfast2">
+				<input type="checkbox" class="cartChechbox" id="breakfast3">
+				<input type="checkbox" class="cartChechbox" id="breakfast4">
 				<!--Brunch-->
-				<input type="checkbox" id="brunch1">
-				<input type="checkbox" id="brunch2">
-				<input type="checkbox" id="brunch3">
-				<input type="checkbox" id="brunch4">
-				<input type="checkbox" id="brunch5">
+				<input type="checkbox" class="cartChechbox" onclick="itemChecked()" id="brunch1">
+				<input type="checkbox" class="cartChechbox" onclick="itemChecked()" id="brunch2">
+				<input type="checkbox" class="cartChechbox" onclick="itemChecked()" id="brunch3">
+				<input type="checkbox" class="cartChechbox" onclick="itemChecked()" id="brunch4">
+				<input type="checkbox" class="cartChechbox" onclick="itemChecked()" id="brunch5">
 				<!--Drinks-->
-				<input type="checkbox" id="drink1">
-				<input type="checkbox" id="drink2">
-				<input type="checkbox" id="drink3">
-				<input type="checkbox" id="drink4">
-				<input type="checkbox" id="drink5">
-				<input type="checkbox" id="drink6">
-				<input type="checkbox" id="drink7">
-				<input type="checkbox" id="drink8">
-				<input type="checkbox" id="drink9">
-				<input type="checkbox" id="drink10">
-				<input type="checkbox" id="drink11">
+				<input type="checkbox" class="cartChechbox" onclick="itemChecked()" id="drink1">
+				<input type="checkbox" class="cartChechbox" onclick="itemChecked()" id="drink2">
+				<input type="checkbox" class="cartChechbox" onclick="itemChecked()" id="drink3">
+				<input type="checkbox" class="cartChechbox" onclick="itemChecked()" id="drink4">
+				<input type="checkbox" class="cartChechbox" onclick="itemChecked()" id="drink5">
+				<input type="checkbox" class="cartChechbox" onclick="itemChecked()" id="drink6">
+				<input type="checkbox" class="cartChechbox" onclick="itemChecked()" id="drink7">
+				<input type="checkbox" class="cartChechbox" onclick="itemChecked()" id="drink8">
+				<input type="checkbox" class="cartChechbox" onclick="itemChecked()" id="drink9">
+				<input type="checkbox" class="cartChechbox" onclick="itemChecked()" id="drink10">
+				<input type="checkbox" class="cartChechbox" onclick="itemChecked()" id="drink11">
 				<!--Speciasl-->
 			</div>
 

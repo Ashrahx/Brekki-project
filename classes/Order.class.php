@@ -2,7 +2,9 @@
 
     class Order implements JsonSerializable{
         //Atributos
-
+        private $name;
+        private $price;
+        private $quantity;
 
         //Constructor
 
