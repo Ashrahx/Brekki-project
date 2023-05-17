@@ -106,787 +106,505 @@ if (!isset($_SESSION['username'])) {
 		</section>
 
 
-		<form method="POST" action="">
 			<!--Breakfasts-->
 			<section class="container top-products">
 				<h1 class="heading-1" id="breakfasts">Breakfasts</h1>
 				<div class="container-products">
 					<!--Breakfast 1-->
-					<div class="card-product">
-						<div class="container-img">
-							<img src="img/eggs.png" alt="Eggs and bacon" />
-							<div class="button-group">
-								<span>
-									<i class="fa-regular fa-eye"></i>
-								</span>
-								<span>
-									<i class="fa-regular fa-heart"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-code-compare"></i>
-								</span>
+					<form method="POST" action="altaOrder.php">
+						<div class="card-product">
+							<div class="container-img">
+								<img src="img/eggs.png" alt="Eggs and bacon" />
 							</div>
-						</div>
-						<div class="content-card-product">
-							<div class="stars">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-regular fa-star"></i>
+							<div class="content-card-product">
+								<div class="stars">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-regular fa-star"></i>
+								</div>
+								<h3>Eggs with bacon</h3>
+								<p class="price">$79.00</p>
 							</div>
-							<h3>Eggs with bacon</h3>
-							<label for="breakfast1">
-								<span class="add-cart" id="cartChecked">
-									<i class="fa-solid fa-basket-shopping"></i>
-								</span>
-							</label>
-							<p class="price">$79.00</p>
+						<input type="hidden" name="product" value="Eggs with bacon">
+						<input type="hidden" name="price" value="$79.00">
+						<input type="submit" name="ok" value="Make order" class="order">
 						</div>
-					</div>
+					</form>
 					<!--Breakfast 2-->
-					<div class="card-product">
-						<div class="container-img">
-							<img src="img/omelette.jpg" alt="Cafe Irish" />
-							<div class="button-group">
-								<span>
-									<i class="fa-regular fa-eye"></i>
-								</span>
-								<span>
-									<i class="fa-regular fa-heart"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-code-compare"></i>
-								</span>
+					<form method="POST" action="altaOrder.php">
+						<div class="card-product">
+							<div class="container-img">
+								<img src="img/omelette.jpg" alt="Omelette" />
 							</div>
-						</div>
-						<div class="content-card-product">
-							<div class="stars">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-regular fa-star"></i>
+							<div class="content-card-product">
+								<div class="stars">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-regular fa-star"></i>
+								</div>
+								<h3>Omelette</h3>
+								<p class="price">$78.00</p>
 							</div>
-							<h3>Omelette</h3>
-							<label for="breakfast2">
-								<span class="add-cart" id="cartChecked">
-									<i class="fa-solid fa-basket-shopping"></i>
-								</span>
-							</label>
-							<p class="price">$78.00</p>
+						<input type="hidden" name="product" value="Omelette">
+						<input type="hidden" name="price" value="$78.00">
+						<input type="submit" name="ok" value="Make order" class="order">
 						</div>
-					</div>
+					</form>
 					<!--Breakfast 3-->
-					<div class="card-product">
-						<div class="container-img">
-							<img src="img/avena.jpg" alt="Cafe Irish" />
-							<div class="button-group">
-								<span>
-									<i class="fa-regular fa-eye"></i>
-								</span>
-								<span>
-									<i class="fa-regular fa-heart"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-code-compare"></i>
-								</span>
+					<form method="POST" action="altaOrder.php">
+						<div class="card-product">
+							<div class="container-img">
+								<img src="img/avena.jpg" alt="Avena" />
 							</div>
-						</div>
-						<div class="content-card-product">
-							<div class="stars">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-regular fa-star"></i>
+							<div class="content-card-product">
+								<div class="stars">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-regular fa-star"></i>
+								</div>
+								<h3>Avena</h3>
+								<p class="price">$40.00</p>
 							</div>
-							<h3>Avena</h3>
-							<label for="breakfast3">
-								<span class="add-cart" id="cartChecked">
-									<i class="fa-solid fa-basket-shopping"></i>
-								</span>
-							</label>
-							<p class="price">$40.00</p>
+						<input type="hidden" name="product" value="Avena">
+						<input type="hidden" name="price" value="$40.00">
+						<input type="submit" name="ok" value="Make order" class="order">
 						</div>
-					</div>
+					</form>
 					<!--Breakfast 4-->
-					<div class="card-product">
-						<div class="container-img">
-							<img src="img/sandwich.jpg" alt="Cafe Irish" />
-							<div class="button-group">
-								<span>
-									<i class="fa-regular fa-eye"></i>
-								</span>
-								<span>
-									<i class="fa-regular fa-heart"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-code-compare"></i>
-								</span>
+					<form method="POST" action="altaOrder.php">
+						<div class="card-product">
+							<div class="container-img">
+								<img src="img/sandwich.jpg" alt="Sandwich" />
 							</div>
-						</div>
-						<div class="content-card-product">
-							<div class="stars">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-regular fa-star"></i>
+							<div class="content-card-product">
+								<div class="stars">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-regular fa-star"></i>
+								</div>
+								<h3>Sandwich</h3>
+								<p class="price">$25.00</p>
 							</div>
-							<h3>Sandwich</h3>
-							<label for="food4">
-								<span class="add-cart" id="cartChecked">
-									<i class="fa-solid fa-basket-shopping"></i>
-								</span>
-							</label>
-							<p class="price">$25.00</p>
+						<input type="hidden" name="product" value="Sandwich">
+						<input type="hidden" name="price" value="$25.00">
+						<input type="submit" name="ok" value="Make order" class="order">
 						</div>
-					</div>
+					</form>
 					<!--Breakfast 5-->
-					<div class="card-product">
-						<div class="container-img">
-							<img src="img/hotcakes.png" alt="Cafe Irish" />
-							<div class="button-group">
-								<span>
-									<i class="fa-regular fa-eye"></i>
-								</span>
-								<span>
-									<i class="fa-regular fa-heart"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-code-compare"></i>
-								</span>
+					<form method="POST" action="altaOrder.php">
+						<div class="card-product">
+							<div class="container-img">
+								<img src="img/hotcakes.png" alt="Hot ckaes" />
 							</div>
-						</div>
-						<div class="content-card-product">
-							<div class="stars">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-regular fa-star"></i>
+							<div class="content-card-product">
+								<div class="stars">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-regular fa-star"></i>
+								</div>
+								<h3>Hot cakes</h3>
+								<p class="price">$35.00</p>
 							</div>
-							<h3>Hot cakes</h3>
-							<label for="food5">
-								<span class="add-cart" id="cartChecked">
-									<i class="fa-solid fa-basket-shopping"></i>
-								</span>
-							</label>
-							<p class="price">$35.00</p>
+						<input type="hidden" name="product" value="Hot ckaes">
+						<input type="hidden" name="price" value="$35.00">
+						<input type="submit" name="ok" value="Make order" class="order">
 						</div>
-					</div>
+					</form>
 					<!--Breakfast 6-->
-					<div class="card-product">
-						<div class="container-img">
-							<img src="img/waffles.jpg" alt="Cafe Irish" />
-							<div class="button-group">
-								<span>
-									<i class="fa-regular fa-eye"></i>
-								</span>
-								<span>
-									<i class="fa-regular fa-heart"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-code-compare"></i>
-								</span>
+					<form method="POST" action="altaOrder.php">
+						<div class="card-product">
+							<div class="container-img">
+								<img src="img/waffles.jpg" alt="Waffles" />
 							</div>
-						</div>
-						<div class="content-card-product">
-							<div class="stars">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-regular fa-star"></i>
+							<div class="content-card-product">
+								<div class="stars">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-regular fa-star"></i>
+								</div>
+								<h3>Waffles</h3>
+								<p class="price">$45.00</p>
 							</div>
-							<h3>Waffles</h3>
-							<label for="breakfast6">
-								<span class="add-cart" id="cartChecked">
-									<i class="fa-solid fa-basket-shopping"></i>
-								</span>
-							</label>
-							<p class="price">$45.00</p>
+						<input type="hidden" name="product" value="Waffles">
+						<input type="hidden" name="price" value="$45.00">
+						<input type="submit" name="ok" value="Make order" class="order">
 						</div>
-					</div>
-				</div>
+					</form>
 			</section>
 			<!--Brunch-->
 			<section class="container top-products">
 				<h1 class="heading-1" id="brunch">Brunch</h1>
 				<div class="container-products">
 					<!--Brunch 1-->
-					<div class="card-product">
-						<div class="container-img">
-							<img src="img/torta.jpg" alt=torta"Cafe Irish" />
-							<div class="button-group">
-								<span>
-									<i class="fa-regular fa-eye"></i>
-								</span>
-								<span>
-									<i class="fa-regular fa-heart"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-code-compare"></i>
-								</span>
+					<form method="POST" action="altaOrder.php">
+						<div class="card-product">
+							<div class="container-img">
+								<img src="img/torta.jpg" alt="Torta" />
 							</div>
-						</div>
-						<div class="content-card-product">
-							<div class="stars">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-regular fa-star"></i>
+							<div class="content-card-product">
+								<div class="stars">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-regular fa-star"></i>
+								</div>
+								<h3>Torta</h3>
+								<p class="price">$65.00</p>
 							</div>
-							<h3>Torta</h3>
-							<label for="brunch1">
-								<span class="add-cart" id="cartChecked">
-									<i class="fa-solid fa-basket-shopping"></i>
-								</span>
-							</label>
-							<p class="price">$65.00</p>
+						<input type="hidden" name="product" value="Torta">
+						<input type="hidden" name="price" value="$65.00">
+						<input type="submit" name="ok" value="Make order" class="order">
 						</div>
-					</div>
+					</form>
 					<!--Brunch 2-->
-					<div class="card-product">
-						<div class="container-img">
-							<img src="img/molletes.jpg" alt="Cafe Irish" />
-							<div class="button-group">
-								<span>
-									<i class="fa-regular fa-eye"></i>
-								</span>
-								<span>
-									<i class="fa-regular fa-heart"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-code-compare"></i>
-								</span>
+					<form method="POST" action="altaOrder.php">
+						<div class="card-product">
+							<div class="container-img">
+								<img src="img/molletes.jpg" alt="Molletes" />
 							</div>
-						</div>
-						<div class="content-card-product">
-							<div class="stars">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-regular fa-star"></i>
+							<div class="content-card-product">
+								<div class="stars">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-regular fa-star"></i>
+								</div>
+								<h3>Molletes</h3>
+								<p class="price">$65.00</p>
 							</div>
-							<h3>Molletes</h3>
-							<label for="brunch2">
-								<span class="add-cart" id="cartChecked">
-									<i class="fa-solid fa-basket-shopping"></i>
-								</span>
-							</label>
-							<p class="price">$35.00</p>
+						<input type="hidden" name="product" value="Molletes">
+						<input type="hidden" name="price" value="$35.00">
+						<input type="submit" name="ok" value="Make order" class="order">
 						</div>
-					</div>
+					</form>
 					<!--Brunch 3-->
-					<div class="card-product">
-						<div class="container-img">
-							<img src="img/chilaquiles.jpg" alt="Cafe Irish" />
-							<div class="button-group">
-								<span>
-									<i class="fa-regular fa-eye"></i>
-								</span>
-								<span>
-									<i class="fa-regular fa-heart"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-code-compare"></i>
-								</span>
+					<form method="POST" action="altaOrder.php">
+						<div class="card-product">
+							<div class="container-img">
+								<img src="img/chilaquiles.jpg" alt="Chilaquiles" />
 							</div>
-						</div>
-						<div class="content-card-product">
-							<div class="stars">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-regular fa-star"></i>
+							<div class="content-card-product">
+								<div class="stars">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-regular fa-star"></i>
+								</div>
+								<h3>Chilaquiles</h3>
+								<p class="price">$25.00</p>
 							</div>
-							<h3>Chilaquiles</h3>
-							<label for="brunch3">
-								<span class="add-cart" id="cartChecked">
-									<i class="fa-solid fa-basket-shopping"></i>
-								</span>
-							</label>
-							<p class="price">$25</p>
+						<input type="hidden" name="product" value="Chilaquiles">
+						<input type="hidden" name="price" value="$25.00">
+						<input type="submit" name="ok" value="Make order" class="order">
 						</div>
-					</div>
+					</form>
 					<!--Brunch 4-->
-					<div class="card-product">
-						<div class="container-img">
-							<img src="img/gorditas.jpg" alt="Cafe Irish" />
-							<div class="button-group">
-								<span>
-									<i class="fa-regular fa-eye"></i>
-								</span>
-								<span>
-									<i class="fa-regular fa-heart"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-code-compare"></i>
-								</span>
+					<form method="POST" action="altaOrder.php">
+						<div class="card-product">
+							<div class="container-img">
+								<img src="img/gorditas.jpg" alt="Gorditas" />
 							</div>
-						</div>
-						<div class="content-card-product">
-							<div class="stars">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-regular fa-star"></i>
+							<div class="content-card-product">
+								<div class="stars">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-regular fa-star"></i>
+								</div>
+								<h3>Gorditas</h3>
+								<p class="price">$14.00</p>
 							</div>
-							<h3>Gorditas</h3>
-							<label for="brunch4">
-								<span class="add-cart" id="cartChecked">
-									<i class="fa-solid fa-basket-shopping"></i>
-								</span>
-							</label>
-							<p class="price">$14</p>
+						<input type="hidden" name="product" value="Gorditas">
+						<input type="hidden" name="price" value="$14.00">
+						<input type="submit" name="ok" value="Make order" class="order">
 						</div>
-					</div>
+					</form>
 					<!--Brunch 5-->
-					<div class="card-product">
-						<div class="container-img">
-							<img src="img/pork.jpg" alt="Cafe Irish" />
-							<div class="button-group">
-								<span>
-									<i class="fa-regular fa-eye"></i>
-								</span>
-								<span>
-									<i class="fa-regular fa-heart"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-code-compare"></i>
-								</span>
+					<form method="POST" action="altaOrder.php">
+						<div class="card-product">
+							<div class="container-img">
+								<img src="img/pork.jpg" alt="Pork rid" />
 							</div>
-						</div>
-						<div class="content-card-product">
-							<div class="stars">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-regular fa-star"></i>
+							<div class="content-card-product">
+								<div class="stars">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-regular fa-star"></i>
+								</div>
+								<h3>Pork rid</h3>
+								<p class="price">$90.00</p>
 							</div>
-							<h3>Pork rind</h3>
-							<label for="brunch5">
-								<span class="add-cart" id="cartChecked">
-									<i class="fa-solid fa-basket-shopping"></i>
-								</span>
-							</label>
-							<p class="price">$90.00</p>
+						<input type="hidden" name="product" value="Pork rid">
+						<input type="hidden" name="price" value="$90.00">
+						<input type="submit" name="ok" value="Make order" class="order">
 						</div>
-					</div>
-				</div>
+					</form>
 			</section>
 			<!--Drinks-->
 			<section class="container top-products">
 				<h1 class="heading-1" id="drinks">Drinks</h1>
 				<div class="container-products">
 					<!--Drink 1-->
-					<div class="card-product">
-						<div class="container-img">
-							<img src="img/jamaica.jpg" alt="Cafe Irish" />
-							<div class="button-group">
-								<span>
-									<i class="fa-regular fa-eye"></i>
-								</span>
-								<span>
-									<i class="fa-regular fa-heart"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-code-compare"></i>
-								</span>
+					<form method="POST" action="altaOrder.php">
+						<div class="card-product">
+							<div class="container-img">
+								<img src="img/jamaica.jpg" alt="Jamaica drink" />
 							</div>
-						</div>
-						<div class="content-card-product">
-							<div class="stars">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-regular fa-star"></i>
+							<div class="content-card-product">
+								<div class="stars">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-regular fa-star"></i>
+								</div>
+								<h3>Jamaica drink</h3>
+								<p class="price">$25.00</p>
 							</div>
-							<h3>Jamica</h3>
-							<label for="drink1">
-								<span class="add-cart" id="cartChecked">
-									<i class="fa-solid fa-basket-shopping"></i>
-								</span>
-							</label>
-							<p class="price">$25</p>
+						<input type="hidden" name="product" value="Jamaica drink">
+						<input type="hidden" name="price" value="$25.00">
+						<input type="submit" name="ok" value="Make order" class="order">
 						</div>
-					</div>
+					</form>
 					<!--Drink 2-->
-					<div class="card-product">
-						<div class="container-img">
-							<img src="img/greenjuice.jpg" alt="Cafe Irish" />
-							<div class="button-group">
-								<span>
-									<i class="fa-regular fa-eye"></i>
-								</span>
-								<span>
-									<i class="fa-regular fa-heart"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-code-compare"></i>
-								</span>
+					<form method="POST" action="altaOrder.php">
+						<div class="card-product">
+							<div class="container-img">
+								<img src="img/greenjuice.jpg" alt="Green juice" />
 							</div>
-						</div>
-						<div class="content-card-product">
-							<div class="stars">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-regular fa-star"></i>
+							<div class="content-card-product">
+								<div class="stars">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-regular fa-star"></i>
+								</div>
+								<h3>Green juice</h3>
+								<p class="price">$25.00</p>
 							</div>
-							<h3>Green Juice</h3>
-							<label for="drink2">
-								<span class="add-cart" id="cartChecked">
-									<i class="fa-solid fa-basket-shopping"></i>
-								</span>
-							</label>
-							<p class="price">$25</p>
+						<input type="hidden" name="product" value="Green juice">
+						<input type="hidden" name="price" value="$25.00">
+						<input type="submit" name="ok" value="Make order" class="order">
 						</div>
-					</div>
+					</form>
 					<!--Drink 3-->
-					<div class="card-product">
-						<div class="container-img">
-							<img src="img/orange.jpg" alt="Cafe Irish" />
-							<div class="button-group">
-								<span>
-									<i class="fa-regular fa-eye"></i>
-								</span>
-								<span>
-									<i class="fa-regular fa-heart"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-code-compare"></i>
-								</span>
+					<form method="POST" action="altaOrder.php">
+						<div class="card-product">
+							<div class="container-img">
+								<img src="img/orange.jpg" alt="Orange juice" />
 							</div>
-						</div>
-						<div class="content-card-product">
-							<div class="stars">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-regular fa-star"></i>
+							<div class="content-card-product">
+								<div class="stars">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-regular fa-star"></i>
+								</div>
+								<h3>Orange juice</h3>
+								<p class="price">$25.00</p>
 							</div>
-							<h3>Orange juice</h3>
-							<label for="drink3">
-								<span class="add-cart" id="cartChecked">
-									<i class="fa-solid fa-basket-shopping"></i>
-								</span>
-							</label>
-							<p class="price">$25</p>
+						<input type="hidden" name="product" value="Orange juice">
+						<input type="hidden" name="price" value="$25.00">
+						<input type="submit" name="ok" value="Make order" class="order">
 						</div>
-					</div>
+					</form>
 					<!--Drink 4-->
-					<div class="card-product">
-						<div class="container-img">
-							<img src="img/strawberry.jpg" alt="Cafe Irish" />
-							<div class="button-group">
-								<span>
-									<i class="fa-regular fa-eye"></i>
-								</span>
-								<span>
-									<i class="fa-regular fa-heart"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-code-compare"></i>
-								</span>
+					<form method="POST" action="altaOrder.php">
+						<div class="card-product">
+							<div class="container-img">
+								<img src="img/strawberry.jpg" alt="Strawberry juice" />
 							</div>
-						</div>
-						<div class="content-card-product">
-							<div class="stars">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-regular fa-star"></i>
+							<div class="content-card-product">
+								<div class="stars">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-regular fa-star"></i>
+								</div>
+								<h3>Strawberry juice</h3>
+								<p class="price">$25.00</p>
 							</div>
-							<h3>Strawberry juice</h3>
-							<label for="drink4">
-								<span class="add-cart" id="cartChecked">
-									<i class="fa-solid fa-basket-shopping"></i>
-								</span>
-							</label>
-							<p class="price">$25</p>
+						<input type="hidden" name="product" value="Strawberry juice">
+						<input type="hidden" name="price" value="$25.00">
+						<input type="submit" name="ok" value="Make order" class="order">
 						</div>
-					</div>
+					</form>
 					<!--Drink 5-->
-					<div class="card-product">
-						<div class="container-img">
-							<img src="img/grapefruit.jpg" alt="Cafe Irish" />
-							<div class="button-group">
-								<span>
-									<i class="fa-regular fa-eye"></i>
-								</span>
-								<span>
-									<i class="fa-regular fa-heart"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-code-compare"></i>
-								</span>
+					<form method="POST" action="altaOrder.php">
+						<div class="card-product">
+							<div class="container-img">
+								<img src="img/grapefruit.jpg" alt="Grapefruit juice" />
 							</div>
-						</div>
-						<div class="content-card-product">
-							<div class="stars">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-regular fa-star"></i>
+							<div class="content-card-product">
+								<div class="stars">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-regular fa-star"></i>
+								</div>
+								<h3>Grapefruit juice</h3>
+								<p class="price">$25.00</p>
 							</div>
-							<h3>Grapefruit juice</h3>
-							<label for="drink5">
-								<span class="add-cart" id="cartChecked">
-									<i class="fa-solid fa-basket-shopping"></i>
-								</span>
-							</label>
-							<p class="price">$25</p>
+						<input type="hidden" name="product" value="Grapefruit juice">
+						<input type="hidden" name="price" value="$25.00">
+						<input type="submit" name="ok" value="Make order" class="order">
 						</div>
-					</div>
+					</form>
 					<!--Drink 6-->
-					<div class="card-product">
-						<div class="container-img">
-							<img src="img/chocolate.jpg" alt="Cafe Irish" />
-							<div class="button-group">
-								<span>
-									<i class="fa-regular fa-eye"></i>
-								</span>
-								<span>
-									<i class="fa-regular fa-heart"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-code-compare"></i>
-								</span>
+					<form method="POST" action="altaOrder.php">
+						<div class="card-product">
+							<div class="container-img">
+								<img src="img/chocolate.jpg" alt="Chocolate smoothie" />
 							</div>
-						</div>
-						<div class="content-card-product">
-							<div class="stars">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-regular fa-star"></i>
+							<div class="content-card-product">
+								<div class="stars">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-regular fa-star"></i>
+								</div>
+								<h3>Chocolate smoothie</h3>
+								<p class="price">$34.00</p>
 							</div>
-							<h3>Chocolate Smoothie</h3>
-							<label for="drink6">
-								<span class="add-cart" id="cartChecked">
-									<i class="fa-solid fa-basket-shopping"></i>
-								</span>
-							</label>
-							<p class="price">$34.00</p>
+						<input type="hidden" name="product" value="Chocolate smoothie">
+						<input type="hidden" name="price" value="$34.00">
+						<input type="submit" name="ok" value="Make order" class="order">
 						</div>
-					</div>
+					</form>
 					<!--Drink 7-->
-					<div class="card-product">
-						<div class="container-img">
-							<img src="img/pumpkin.jpg" alt="Cafe Irish" />
-							<div class="button-group">
-								<span>
-									<i class="fa-regular fa-eye"></i>
-								</span>
-								<span>
-									<i class="fa-regular fa-heart"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-code-compare"></i>
-								</span>
+					<form method="POST" action="altaOrder.php">
+						<div class="card-product">
+							<div class="container-img">
+								<img src="img/pumpkin.jpg" alt="Pumpkin smoothie" />
 							</div>
-						</div>
-						<div class="content-card-product">
-							<div class="stars">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-regular fa-star"></i>
+							<div class="content-card-product">
+								<div class="stars">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-regular fa-star"></i>
+								</div>
+								<h3>Pumpkin smoothie</h3>
+								<p class="price">$35.00</p>
 							</div>
-							<h3>Pumpkin smoothie</h3>
-							<label for="drink7">
-								<span class="add-cart" id="cartChecked">
-									<i class="fa-solid fa-basket-shopping"></i>
-								</span>
-							</label>
-							<p class="price">$35.00</p>
+						<input type="hidden" name="product" value="Pumpkin smoothie">
+						<input type="hidden" name="price" value="$35.00">
+						<input type="submit" name="ok" value="Make order" class="order">
 						</div>
-					</div>
+					</form>
 					<!--Drink 8-->
-					<div class="card-product">
-						<div class="container-img">
-							<img src="img/mango.jpg" alt="Cafe Irish" />
-							<div class="button-group">
-								<span>
-									<i class="fa-regular fa-eye"></i>
-								</span>
-								<span>
-									<i class="fa-regular fa-heart"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-code-compare"></i>
-								</span>
+					<form method="POST" action="altaOrder.php">
+						<div class="card-product">
+							<div class="container-img">
+								<img src="img/mango.jpg" alt="Mango smoothie" />
 							</div>
-						</div>
-						<div class="content-card-product">
-							<div class="stars">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-regular fa-star"></i>
+							<div class="content-card-product">
+								<div class="stars">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-regular fa-star"></i>
+								</div>
+								<h3>Mango smoothie</h3>
+								<p class="price">$32.00</p>
 							</div>
-							<h3>Mango smoothie</h3>
-							<label for="drink8">
-								<span class="add-cart" id="cartChecked">
-									<i class="fa-solid fa-basket-shopping"></i>
-								</span>
-							</label>
-							<p class="price">$32.00</p>
+						<input type="hidden" name="product" value="Mango smoothie">
+						<input type="hidden" name="price" value="$32.00">
+						<input type="submit" name="ok" value="Make order" class="order">
 						</div>
-					</div>
+					</form>
 					<!--Drink 9-->
-					<div class="card-product">
-						<div class="container-img">
-							<img src="img/banana.jpg" alt="Cafe Irish" />
-							<div class="button-group">
-								<span>
-									<i class="fa-regular fa-eye"></i>
-								</span>
-								<span>
-									<i class="fa-regular fa-heart"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-code-compare"></i>
-								</span>
+					<form method="POST" action="altaOrder.php">
+						<div class="card-product">
+							<div class="container-img">
+								<img src="img/banana.jpg" alt="Banana smoothie" />
 							</div>
-						</div>
-						<div class="content-card-product">
-							<div class="stars">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-regular fa-star"></i>
+							<div class="content-card-product">
+								<div class="stars">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-regular fa-star"></i>
+								</div>
+								<h3>Banana smoothie</h3>
+								<p class="price">$30.00</p>
 							</div>
-							<h3>Banana smoothie</h3>
-							<label for="drink9">
-								<span class="add-cart" id="cartChecked">
-									<i class="fa-solid fa-basket-shopping"></i>
-								</span>
-							</label>
-							<p class="price">$30.00</p>
+						<input type="hidden" name="product" value="Banana smoothie">
+						<input type="hidden" name="price" value="$30.00">
+						<input type="submit" name="ok" value="Make order" class="order">
 						</div>
-					</div>
+					</form>
 					<!--Drink 10-->
-					<div class="card-product">
-						<div class="container-img">
-							<img src="img/blue.jpg" alt="Cafe Irish" />
-							<div class="button-group">
-								<span>
-									<i class="fa-regular fa-eye"></i>
-								</span>
-								<span>
-									<i class="fa-regular fa-heart"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-code-compare"></i>
-								</span>
+					<form method="POST" action="altaOrder.php">
+						<div class="card-product">
+							<div class="container-img">
+								<img src="img/blue.jpg" alt="Blueberry Peach Smoothie" />
 							</div>
-						</div>
-						<div class="content-card-product">
-							<div class="stars">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-regular fa-star"></i>
+							<div class="content-card-product">
+								<div class="stars">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-regular fa-star"></i>
+								</div>
+								<h3>Blueberry Peach Smoothie</h3>
+								<p class="price">$40.00</p>
 							</div>
-							<h3>Blueberry Peach Smoothie</h3>
-							<label for="drink10">
-								<span class="add-cart" id="cartChecked">
-									<i class="fa-solid fa-basket-shopping"></i>
-								</span>
-							</label>
-							<p class="price">$40.00</p>
+						<input type="hidden" name="product" value="Blueberry Peach Smoothie">
+						<input type="hidden" name="price" value="$40.00">
+						<input type="submit" name="ok" value="Make order" class="order">
 						</div>
-					</div>
+					</form>
 					<!--Drink 11-->
-					<div class="card-product">
-						<div class="container-img">
-							<img src="img/strawberry-s.jpg" alt="Cafe Irish" />
-							<div class="button-group">
-								<span>
-									<i class="fa-regular fa-eye"></i>
-								</span>
-								<span>
-									<i class="fa-regular fa-heart"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-code-compare"></i>
-								</span>
+					<form method="POST" action="altaOrder.php">
+						<div class="card-product">
+							<div class="container-img">
+								<img src="img/strawberry-s.jpg" alt="Strawberry banana smoothie" />
 							</div>
-						</div>
-						<div class="content-card-product">
-							<div class="stars">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-regular fa-star"></i>
+							<div class="content-card-product">
+								<div class="stars">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-regular fa-star"></i>
+								</div>
+								<h3>Strawberry banana smoothie</h3>
+								<p class="price">$45.00</p>
 							</div>
-							<h3>Strawberry banana smoothie</h3>
-							<label for="drink11">
-								<span class="add-cart" id="cartChecked">
-									<i class="fa-solid fa-basket-shopping"></i>
-								</span>
-							</label>
-							<p id="inCart" style="display:none">In cart</p>
-							<p class="price">$45.00</p>
+						<input type="hidden" name="product" value="Strawberry banana smoothie">
+						<input type="hidden" name="price" value="$45.00">
+						<input type="submit" name="ok" value="Make order" class="order">
 						</div>
-					</div>
-				</div>
+					</form>
 			</section>
-
-			<div>
-				<!--Breakfasts-->
-				<input type="checkbox" class="cartChechbox" id="breakfast1">
-				<input type="checkbox" class="cartChechbox" id="breakfast2">
-				<input type="checkbox" class="cartChechbox" id="breakfast3">
-				<input type="checkbox" class="cartChechbox" id="breakfast4">
-				<!--Breakfasts price-->
-				<input type="checkbox" class="cartChechbox" id="breakfast1"><p>H</p>
-				<input type="checkbox" class="cartChechbox" id="breakfast2">
-				<input type="checkbox" class="cartChechbox" id="breakfast3">
-				<input type="checkbox" class="cartChechbox" id="breakfast4">
-				<!--Brunch-->
-				<input type="checkbox" class="cartChechbox" onclick="itemChecked()" id="brunch1">
-				<input type="checkbox" class="cartChechbox" onclick="itemChecked()" id="brunch2">
-				<input type="checkbox" class="cartChechbox" onclick="itemChecked()" id="brunch3">
-				<input type="checkbox" class="cartChechbox" onclick="itemChecked()" id="brunch4">
-				<input type="checkbox" class="cartChechbox" onclick="itemChecked()" id="brunch5">
-				<!--Drinks-->
-				<input type="checkbox" class="cartChechbox" onclick="itemChecked()" id="drink1">
-				<input type="checkbox" class="cartChechbox" onclick="itemChecked()" id="drink2">
-				<input type="checkbox" class="cartChechbox" onclick="itemChecked()" id="drink3">
-				<input type="checkbox" class="cartChechbox" onclick="itemChecked()" id="drink4">
-				<input type="checkbox" class="cartChechbox" onclick="itemChecked()" id="drink5">
-				<input type="checkbox" class="cartChechbox" onclick="itemChecked()" id="drink6">
-				<input type="checkbox" class="cartChechbox" onclick="itemChecked()" id="drink7">
-				<input type="checkbox" class="cartChechbox" onclick="itemChecked()" id="drink8">
-				<input type="checkbox" class="cartChechbox" onclick="itemChecked()" id="drink9">
-				<input type="checkbox" class="cartChechbox" onclick="itemChecked()" id="drink10">
-				<input type="checkbox" class="cartChechbox" onclick="itemChecked()" id="drink11">
-				<!--Speciasl-->
-			</div>
-
-			<input type="submit" name="ok" value="Make order" class="order">
-		</form>		
 
 	</main>
 

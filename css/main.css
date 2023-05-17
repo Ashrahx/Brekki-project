@@ -517,14 +517,10 @@ html {
 	grid-column: 1/-1;
 
 	font-weight: 400;
-	font-size: 1.6rem;
+	font-size: 1.8rem;
 	margin-bottom: 1rem;
-	cursor: pointer;
 }
 
-.content-card-product h3:hover {
-	color: var(--primary-color);
-}
 
 .add-cart {
 	justify-self: start;

@@ -52,13 +52,13 @@
       "name": "Chilaquiles",
       "image": "./img/Chilaquiles.jpg",
       "category": "Brunch",
-      "price": "$25"
+      "price": "$25.00"
     },
     {
       "name": "Gorditas",
       "image": "./img/gorditas.jpg",
       "category": "Brunch",
-      "price": "$14"
+      "price": "$14.00"
     },
     {
       "name": "Pork rind",
@@ -70,31 +70,31 @@
       "name": "Jamaica drink",
       "image": "./img/jamaica.jpg",
       "category": "Drink",
-      "price": "$25"
+      "price": "$25.00"
     },
     {
       "name": "Green juice",
       "image": "./img/greenjuice.jpg",
       "category": "Drink",
-      "price": "$25"
+      "price": "$25.00"
     },
     {
       "name": "Orange juice",
       "image": "./img/orange.jpg",
       "category": "Drink",
-      "price": "$25"
+      "price": "$25.00"
     },
     {
       "name": "Strawberry juice",
       "image": "./img/strawberry.jpg",
       "category": "Drink",
-      "price": "$25"
+      "price": "$25.00"
     },
     {
       "name": "Grapefruit juice",
       "image": "./img/grapefruit.jpg",
       "category": "Drink",
-      "price": "$25"
+      "price": "$25.00"
     },
     {
       "name": "Chocolate smoothie",
