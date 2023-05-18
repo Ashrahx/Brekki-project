@@ -47,20 +47,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
-<<<<<<< HEAD
-$rutaArchivo = "order.json"; // Ruta del archivo JSON
-
-if (unlink($rutaArchivo)) {
-    echo '!';
-} else {
-    echo 'Successful purchase.';
-=======
 $rutaArchivo = 'order.json'; // Ruta del archivo JSON
 
 if (unlink($rutaArchivo)) {
     echo 'Purchase complete.';
 } else {
     echo 'Purchase fail.';
->>>>>>> 8a7be6f4bb5bb511c6db9c44a8ba6a3d9c847fc5
 }
 ?>
