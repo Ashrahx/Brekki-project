@@ -601,7 +601,7 @@ if (!isset($_SESSION['username'])) {
 								<p class="price">$45.00</p>
 							</div>
 						<input type="hidden" name="product" value="Strawberry banana smoothie">
-						<input type="hidden" name="price" value="$45.00">
+						<input type="hidden" name="price" value="45.00">
 						<input type="submit" name="ok" value="Make order" class="order">
 						</div>
 					</form>
@@ -622,8 +622,8 @@ if (!isset($_SESSION['username'])) {
 				<div class="information">
 					<p class="title-footer">Information</p>
 					<ul>
-						<li><a href="./login/policies.html">Privacy policies</a></li>
-						<li><a href="./login/terms.html">Terms and conditions</a></li>
+						<li><a href="./login/policies.html" target="_blank">Privacy policies</a></li>
+						<li><a href="./login/terms.html" target="_blank">Terms and conditions</a></li>
 					</ul>
 				</div>
 

@@ -1,5 +1,21 @@
 [
 {
+    "product": "Waffles",
+    "price": 45
+},
+{
+    "product": "Chilaquiles",
+    "price": 25
+},
+{
+    "product": "Banana smoothie",
+    "price": 30
+},
+{
+    "product": "Strawberry banana smoothie",
+    "price": 0
+},
+{
     "product": "Eggs with bacon",
     "price": 79
 },
@@ -8,15 +24,11 @@
     "price": 78
 },
 {
-    "product": "Waffles",
+    "product": "Banana smoothie",
+    "price": 30
+},
+{
+    "product": "Strawberry banana smoothie",
     "price": 45
-},
-{
-    "product": "Green juice",
-    "price": 25
-},
-{
-    "product": "Chilaquiles",
-    "price": 25
 }
 ]
