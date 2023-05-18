@@ -122,7 +122,7 @@
 				<div class="information">
 					<p class="title-footer">Information</p>
 					<ul>
-						<li><a href="#">Privacy policies</a></li>
+						<li><a href="./login/policies.html" target="_blank">Privacy policies</a></li>
 						<li><a href="./login/terms.html" target="_blank">Terms and conditions</a></li>
 					</ul>
 				</div>

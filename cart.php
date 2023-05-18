@@ -20,7 +20,7 @@ if (file_exists($url)) {
 	}
 }
 
-$total = $subtotal + ($subtotal * 0.16)
+$total = $subtotal + ($subtotal * 0.16);
 
 ?>
 
@@ -115,11 +115,11 @@ $total = $subtotal + ($subtotal * 0.16)
 			<form action="./validate.php" method="POST">
 				<div class="inputBox">
 					<span>card number</span>
-					<input type="text" maxlength="16" class="card-number-input" name="cardNumber" required>
+					<input type="text" minlength="16" maxlength="16" class="card-number-input" name="cardNumber" required>
 				</div>
 				<div class="inputBox">
 					<span>card holder</span>
-					<input type="text" class="card-holder-input" name="cardHolder" required>
+					<input type="text" minlength="4" maxlength="16" class="card-holder-input" name="cardHolder" required>
 				</div>
 				<div class="flexbox">
 					<div class="inputBox">
