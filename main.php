@@ -52,7 +52,7 @@ if (!isset($_SESSION['username'])) {
 
 	<section class="banner">
 		<div class="content-banner">
-			<a href="#product"><strong>Order now</strong></a>
+			<a href="#breakfasts"><strong>Order now</strong></a>
 		</div>
 	</section>
 
@@ -622,8 +622,8 @@ if (!isset($_SESSION['username'])) {
 				<div class="information">
 					<p class="title-footer">Information</p>
 					<ul>
-						<li><a href="#">Privacy policies</a></li>
-						<li><a href="./login/terms.html">Términos y condiciones</a></li>
+						<li><a href="./login/policies.html">Privacy policies</a></li>
+						<li><a href="./login/terms.html">Terms and conditions</a></li>
 					</ul>
 				</div>
 

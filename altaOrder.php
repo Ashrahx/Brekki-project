@@ -32,7 +32,7 @@
 
 		header("refresh:0; url='main.php'");
     }else{
-		echo "No";
+		echo "<h1 style=color:red;>No</h1>";
 		header("refresh:3; url='index.php");
     }
 
