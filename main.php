@@ -169,7 +169,7 @@ if (!isset($_SESSION['username'])) {
 									<i class="fa-solid fa-star"></i>
 									<i class="fa-regular fa-star"></i>
 								</div>
-								<h3>Avena</h3>
+								<h3>Oatmeal</h3>
 								<p class="price">$40.00</p>
 							</div>
 						<input type="hidden" name="product" value="Avena">
