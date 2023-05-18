@@ -2,7 +2,7 @@
   "products": [
     {
       "name": "Eggs with bacon",
-      "image": "./img/eggs.jpg",
+      "image": "./img/eggs.png",
       "category": "Breakfast",
       "price": "$79.00"
     },
