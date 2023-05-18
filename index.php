@@ -27,7 +27,7 @@
 					<h1 style="color:white; font-size:3rem;">BREKII</h1>
 				</div>
 				<div class="container-register">
-					<a href="./login/login.html" class="sign-in"><i class="fa-solid fa-user"></i> Sign in</a>
+					<a href="./login/login.html" class="sign-in"><i class="fa-solid fa-user"></i> Login in</a>
 					<a href="./login/register.html" class="sign-up">Sign up</a>
 				</div>
 			</nav>
