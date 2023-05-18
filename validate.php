@@ -1,40 +1,49 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $numeroTarjeta = $_POST['numeroTarjeta'];
-    $nombre = $_POST['nombre'];
-    $mesExpiracion = $_POST['mes'];
-    $anioExpiracion = $_POST['year'];
-    $ccv = $_POST['ccv'];
+    // Obtener los datos del formulario
+    $cardNumber = $_POST['cardNumber'];
+    $cardHolder = $_POST['cardHolder'];
+    $expMonth = $_POST['expMonth'];
+    $expYear = $_POST['expYear'];
+    $cvv = $_POST['cvv'];
 
-   
-    if (empty($numeroTarjeta)) {
-        echo "Por favor ingresa el número de tarjeta";
-    } elseif (!preg_match('/^[0-9]{16}$/', $numeroTarjeta)) {
-        echo "El número de tarjeta ingresado no es válido";
+    // Expresiones regulares
+    $patternCardNumber = '/^\d{16}$/';
+    $patternCardHolder = '/^[A-Za-z ]{4,16}$/';
+    $patternExpMonth = '/^(0[1-9]|1[0-2])$/';
+    $patternExpYear = '/^(2[3-9]|[3-9][0-9])$/';
+    $patternCvv = '/^\d{3}$/';
+
+    // Validar campos
+    $errors = [];
+
+    if (!preg_match($patternCardNumber, $cardNumber)) {
+        $errors[] = 'The credit card number is not valid.';
     }
 
-    if (empty($nombre)) {
-        echo "Por favor ingresa el nombre";
-    } elseif (strlen($nombre) > 19) {
-        echo "El nombre ingresado es demasiado largo";
+    if (!preg_match($patternCardHolder, $cardHolder)) {
+        $errors[] = 'The name of the card holder is not valid.';
     }
 
- 
-    if (empty($mesExpiracion) || $mesExpiracion === 'Mes') {
-        echo "Por favor selecciona el mes de expiración";
+    if (!preg_match($patternExpMonth, $expMonth)) {
+        $errors[] = 'The expiration month is not valid.';
     }
 
-    if (empty($anioExpiracion) || $anioExpiracion === 'Año') {
-        echo "Por favor selecciona el año de expiración";
+    if (!preg_match($patternExpYear, $expYear)) {
+        $errors[] = 'The expiration year is not valid.';
     }
 
-
-    if (empty($ccv)) {
-        echo "Por favor ingresa el CCV";
-    } elseif (!preg_match('/^[0-9]{3}$/', $ccv)) {
-        echo "El CCV ingresado no es válido";
+    if (!preg_match($patternCvv, $cvv)) {
+        $errors[] = 'The CVV is not valid.';
     }
 
-   
+    // Si hay errores, mostrarlos; de lo contrario, mostrar un mensaje de éxito
+    if (!empty($errors)) {
+        foreach ($errors as $error) {
+            echo $error . '<br>';
+        }
+    } else {
+        echo 'Successful purchase!';
+    }
 }
 ?>

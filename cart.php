@@ -38,13 +38,7 @@ $total = $subtotal + ($subtotal * 0.16)
 </head>
 
 <body>
-	<header>
-		<nav>
-			<div>
-				<h1 style="color:white; font-size:3rem;">BREKII</h1>
-			</div>
-		</nav>
-	</header>
+		<a href="./main.php"><img src="./img/logo.png" alt="Logo" class="logo"></a>
 
 	<main class="grid">
 
@@ -118,19 +112,19 @@ $total = $subtotal + ($subtotal * 0.16)
 
 			</div>
 
-			<form action="">
+			<form action="./validate.php" method="POST">
 				<div class="inputBox">
 					<span>card number</span>
-					<input type="text" maxlength="16" class="card-number-input">
+					<input type="text" maxlength="16" class="card-number-input" name="cardNumber" required>
 				</div>
 				<div class="inputBox">
 					<span>card holder</span>
-					<input type="text" class="card-holder-input">
+					<input type="text" class="card-holder-input" name="cardHolder" required>
 				</div>
 				<div class="flexbox">
 					<div class="inputBox">
 						<span>expiration mm</span>
-						<select name="" id="" class="month-input">
+						<select name="expMonth" id="" class="month-input">
 							<option value="month" selected disabled>month</option>
 							<option value="01">01</option>
 							<option value="02">02</option>
@@ -148,23 +142,23 @@ $total = $subtotal + ($subtotal * 0.16)
 					</div>
 					<div class="inputBox">
 						<span>expiration yy</span>
-						<select name="" id="" class="year-input">
+						<select name="expYear" id="" class="year-input">
 							<option value="year" selected disabled>year</option>
-							<option value="2023">2023</option>
-							<option value="2024">2024</option>
-							<option value="2025">2025</option>
-							<option value="2026">2026</option>
-							<option value="2027">2027</option>
-							<option value="2028">2028</option>
-							<option value="2029">2029</option>
-							<option value="2030">2030</option>
-							<option value="2031">2031</option>
-							<option value="2032">2032</option>
+							<option value="23">23</option>
+							<option value="24">24</option>
+							<option value="25">25</option>
+							<option value="26">26</option>
+							<option value="27">27</option>
+							<option value="28">28</option>
+							<option value="29">29</option>
+							<option value="30">30</option>
+							<option value="31">31</option>
+							<option value="32">32</option>
 						</select>
 					</div>
 					<div class="inputBox">
 						<span>cvv</span>
-						<input type="text" maxlength="4" class="cvv-input">
+						<input type="text" maxlength="3" name="cvv" class="cvv-input">
 					</div>
 				</div>
 				<input type="submit" value="submit" class="submit-btn">
