@@ -22,21 +22,6 @@ html {
 	box-sizing: border-box;
 }
 
-/* ORDER BUTTON */
-.order{
-	justify-self: start;
-	border: 2px solid var(--primary-color);
-	padding: 1rem;
-	border-radius: 50%;
-	cursor: pointer;
-	transition: all 0.4s ease;
-
-	display: block;
-	align-items: center;
-	justify-content: center;
-	background-color: #000000;
-}
-
 /* UTILIDADES */
 .container {
 	max-width: 120rem;
@@ -447,10 +432,12 @@ html {
 
 .container-img {
 	position: relative;
+	align-content: center;
 }
 
 .container-img img {
 	width: 100%;
+	object-fit: fill;
 }
 
 .container-img .discount {
@@ -699,7 +686,7 @@ html {
 /* SUBMIT */
 .order {
 	display: block;
-	background-color: #337ab7;
+	background-color: #c7ac69;
 	color: #fff;
 	padding: 10px 20px;
 	border: none;
@@ -707,15 +694,17 @@ html {
 	font-size: 16px;
 	cursor: pointer;
 	margin: 30px auto;
+	border: 2px solid var(--primary-color);
   }
   
   .order:hover {
-	background-color: #23527c;
+	background-color: #fff;
+	color: #c7ac69;
   }
   
   .order:focus {
 	outline: none;
-	box-shadow: 0 0 0 3px rgba(51, 122, 183, 0.3);
+	box-shadow: 0 0 0 3px rgba(160, 168, 45, 0.3);
   }
 
 

@@ -159,7 +159,7 @@ if (!isset($_SESSION['username'])) {
 					<form method="POST" action="altaOrder.php">
 						<div class="card-product">
 							<div class="container-img">
-								<img src="img/avena.jpg" alt="Avena" />
+								<img src="img/oatmeal.jpg" alt="Oatmeal" />
 							</div>
 							<div class="content-card-product">
 								<div class="stars">
@@ -172,7 +172,7 @@ if (!isset($_SESSION['username'])) {
 								<h3>Oatmeal</h3>
 								<p class="price">$40.00</p>
 							</div>
-						<input type="hidden" name="product" value="Avena">
+						<input type="hidden" name="product" value="Oatmeal">
 						<input type="hidden" name="price" value="$40.00">
 						<input type="submit" name="ok" value="Make order" class="order">
 						</div>

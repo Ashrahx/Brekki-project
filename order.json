@@ -10,5 +10,9 @@
 {
     "product": "Avena",
     "price": "$40.00"
+},
+{
+    "product": "Eggs with bacon",
+    "price": 0
 }
 ]
