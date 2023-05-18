@@ -6,7 +6,7 @@
 
         //Guardando del formulario
         $name = $_POST['product'];
-        $price = $_POST['price'];
+        $price = intval($_POST['price']);
 
         //Creando el objeto
         $order = new Order($name, $price);

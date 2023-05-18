@@ -22,6 +22,21 @@ html {
 	box-sizing: border-box;
 }
 
+/* ORDER BUTTON */
+.order{
+	justify-self: start;
+	border: 2px solid var(--primary-color);
+	padding: 1rem;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: all 0.4s ease;
+
+	display: block;
+	align-items: center;
+	justify-content: center;
+	background-color: #000000;
+}
+
 /* UTILIDADES */
 .container {
 	max-width: 120rem;

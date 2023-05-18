@@ -43,7 +43,7 @@ if (!isset($_SESSION['username'])) {
 						</a>
 					</div>
 				<div class="container-user">
-					<i class="fa-solid fa-cart-shopping"></i>
+					<a href="cart.php"><i class="fa-solid fa-cart-shopping"></i></a>
 					<a href="./login/logout.php" class="logout"><i class="fa-solid fa-door-open"></i> Log out</i></a>
 				</div>
 			</nav>
