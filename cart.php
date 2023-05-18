@@ -161,7 +161,7 @@ $total = $subtotal + ($subtotal * 0.16)
 						<input type="text" maxlength="3" name="cvv" class="cvv-input">
 					</div>
 				</div>
-				<input type="submit" value="submit" class="submit-btn">
+				<input name="checkout" type="submit" value="submit" class="submit-btn">
 			</form>
 
 		</div>
