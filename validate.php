@@ -43,7 +43,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             echo $error . '<br>';
         }
     } else {
-        echo 'Successful purchase!';
+        echo 'Successful purchase';
     }
+}
+
+$rutaArchivo = "order.json"; // Ruta del archivo JSON
+
+if (unlink($rutaArchivo)) {
+    echo '!';
+} else {
+    echo 'Successful purchase.';
 }
 ?>
