@@ -129,7 +129,7 @@ if (!isset($_SESSION['username'])) {
 								<p class="price">$79.00</p>
 							</div>
 						<input type="hidden" name="product" value="Eggs with bacon">
-						<input type="hidden" name="price" value="$79.00">
+						<input type="hidden" name="price" value="79.00">
 						<input type="submit" name="ok" value="Make order" class="order">
 						</div>
 					</form>
@@ -151,7 +151,7 @@ if (!isset($_SESSION['username'])) {
 								<p class="price">$78.00</p>
 							</div>
 						<input type="hidden" name="product" value="Omelette">
-						<input type="hidden" name="price" value="$78.00">
+						<input type="hidden" name="price" value="78.00">
 						<input type="submit" name="ok" value="Make order" class="order">
 						</div>
 					</form>
@@ -173,7 +173,7 @@ if (!isset($_SESSION['username'])) {
 								<p class="price">$40.00</p>
 							</div>
 						<input type="hidden" name="product" value="Oatmeal">
-						<input type="hidden" name="price" value="$40.00">
+						<input type="hidden" name="price" value="40.00">
 						<input type="submit" name="ok" value="Make order" class="order">
 						</div>
 					</form>
@@ -195,7 +195,7 @@ if (!isset($_SESSION['username'])) {
 								<p class="price">$25.00</p>
 							</div>
 						<input type="hidden" name="product" value="Sandwich">
-						<input type="hidden" name="price" value="$25.00">
+						<input type="hidden" name="price" value="25.00">
 						<input type="submit" name="ok" value="Make order" class="order">
 						</div>
 					</form>
@@ -217,7 +217,7 @@ if (!isset($_SESSION['username'])) {
 								<p class="price">$35.00</p>
 							</div>
 						<input type="hidden" name="product" value="Hot ckaes">
-						<input type="hidden" name="price" value="$35.00">
+						<input type="hidden" name="price" value="35.00">
 						<input type="submit" name="ok" value="Make order" class="order">
 						</div>
 					</form>
@@ -239,7 +239,7 @@ if (!isset($_SESSION['username'])) {
 								<p class="price">$45.00</p>
 							</div>
 						<input type="hidden" name="product" value="Waffles">
-						<input type="hidden" name="price" value="$45.00">
+						<input type="hidden" name="price" value="45.00">
 						<input type="submit" name="ok" value="Make order" class="order">
 						</div>
 					</form>
@@ -266,7 +266,7 @@ if (!isset($_SESSION['username'])) {
 								<p class="price">$65.00</p>
 							</div>
 						<input type="hidden" name="product" value="Torta">
-						<input type="hidden" name="price" value="$65.00">
+						<input type="hidden" name="price" value="65.00">
 						<input type="submit" name="ok" value="Make order" class="order">
 						</div>
 					</form>
@@ -288,7 +288,7 @@ if (!isset($_SESSION['username'])) {
 								<p class="price">$65.00</p>
 							</div>
 						<input type="hidden" name="product" value="Molletes">
-						<input type="hidden" name="price" value="$35.00">
+						<input type="hidden" name="price" value="35.00">
 						<input type="submit" name="ok" value="Make order" class="order">
 						</div>
 					</form>
@@ -310,7 +310,7 @@ if (!isset($_SESSION['username'])) {
 								<p class="price">$25.00</p>
 							</div>
 						<input type="hidden" name="product" value="Chilaquiles">
-						<input type="hidden" name="price" value="$25.00">
+						<input type="hidden" name="price" value="25.00">
 						<input type="submit" name="ok" value="Make order" class="order">
 						</div>
 					</form>
@@ -332,7 +332,7 @@ if (!isset($_SESSION['username'])) {
 								<p class="price">$14.00</p>
 							</div>
 						<input type="hidden" name="product" value="Gorditas">
-						<input type="hidden" name="price" value="$14.00">
+						<input type="hidden" name="price" value="14.00">
 						<input type="submit" name="ok" value="Make order" class="order">
 						</div>
 					</form>
@@ -354,7 +354,7 @@ if (!isset($_SESSION['username'])) {
 								<p class="price">$90.00</p>
 							</div>
 						<input type="hidden" name="product" value="Pork rid">
-						<input type="hidden" name="price" value="$90.00">
+						<input type="hidden" name="price" value="90.00">
 						<input type="submit" name="ok" value="Make order" class="order">
 						</div>
 					</form>
@@ -381,7 +381,7 @@ if (!isset($_SESSION['username'])) {
 								<p class="price">$25.00</p>
 							</div>
 						<input type="hidden" name="product" value="Jamaica drink">
-						<input type="hidden" name="price" value="$25.00">
+						<input type="hidden" name="price" value="25.00">
 						<input type="submit" name="ok" value="Make order" class="order">
 						</div>
 					</form>
@@ -403,7 +403,7 @@ if (!isset($_SESSION['username'])) {
 								<p class="price">$25.00</p>
 							</div>
 						<input type="hidden" name="product" value="Green juice">
-						<input type="hidden" name="price" value="$25.00">
+						<input type="hidden" name="price" value="25.00">
 						<input type="submit" name="ok" value="Make order" class="order">
 						</div>
 					</form>
@@ -425,7 +425,7 @@ if (!isset($_SESSION['username'])) {
 								<p class="price">$25.00</p>
 							</div>
 						<input type="hidden" name="product" value="Orange juice">
-						<input type="hidden" name="price" value="$25.00">
+						<input type="hidden" name="price" value="25.00">
 						<input type="submit" name="ok" value="Make order" class="order">
 						</div>
 					</form>
@@ -447,7 +447,7 @@ if (!isset($_SESSION['username'])) {
 								<p class="price">$25.00</p>
 							</div>
 						<input type="hidden" name="product" value="Strawberry juice">
-						<input type="hidden" name="price" value="$25.00">
+						<input type="hidden" name="price" value="25.00">
 						<input type="submit" name="ok" value="Make order" class="order">
 						</div>
 					</form>
@@ -469,7 +469,7 @@ if (!isset($_SESSION['username'])) {
 								<p class="price">$25.00</p>
 							</div>
 						<input type="hidden" name="product" value="Grapefruit juice">
-						<input type="hidden" name="price" value="$25.00">
+						<input type="hidden" name="price" value="25.00">
 						<input type="submit" name="ok" value="Make order" class="order">
 						</div>
 					</form>
@@ -491,7 +491,7 @@ if (!isset($_SESSION['username'])) {
 								<p class="price">$34.00</p>
 							</div>
 						<input type="hidden" name="product" value="Chocolate smoothie">
-						<input type="hidden" name="price" value="$34.00">
+						<input type="hidden" name="price" value="34.00">
 						<input type="submit" name="ok" value="Make order" class="order">
 						</div>
 					</form>
@@ -513,7 +513,7 @@ if (!isset($_SESSION['username'])) {
 								<p class="price">$35.00</p>
 							</div>
 						<input type="hidden" name="product" value="Pumpkin smoothie">
-						<input type="hidden" name="price" value="$35.00">
+						<input type="hidden" name="price" value="35.00">
 						<input type="submit" name="ok" value="Make order" class="order">
 						</div>
 					</form>
@@ -535,7 +535,7 @@ if (!isset($_SESSION['username'])) {
 								<p class="price">$32.00</p>
 							</div>
 						<input type="hidden" name="product" value="Mango smoothie">
-						<input type="hidden" name="price" value="$32.00">
+						<input type="hidden" name="price" value="32.00">
 						<input type="submit" name="ok" value="Make order" class="order">
 						</div>
 					</form>
@@ -557,7 +557,7 @@ if (!isset($_SESSION['username'])) {
 								<p class="price">$30.00</p>
 							</div>
 						<input type="hidden" name="product" value="Banana smoothie">
-						<input type="hidden" name="price" value="$30.00">
+						<input type="hidden" name="price" value="30.00">
 						<input type="submit" name="ok" value="Make order" class="order">
 						</div>
 					</form>
@@ -579,7 +579,7 @@ if (!isset($_SESSION['username'])) {
 								<p class="price">$40.00</p>
 							</div>
 						<input type="hidden" name="product" value="Blueberry Peach Smoothie">
-						<input type="hidden" name="price" value="$40.00">
+						<input type="hidden" name="price" value="40.00">
 						<input type="submit" name="ok" value="Make order" class="order">
 						</div>
 					</form>

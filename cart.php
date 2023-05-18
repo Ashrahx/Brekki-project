@@ -3,6 +3,7 @@
 	require_once("classes/Order.class.php");
 	$url = __DIR__ . "/order.json";
 	$orderList = [];
+    $subtotal = 0;
 
 	if(file_exists($url)){
 		$orderJson = file_get_contents($url);
@@ -14,8 +15,12 @@
 				$ord -> price,
 			);
 			array_push($orderList, $item);
+            $itemTot = intval($ord -> price);
+            $subtotal = $subtotal + $itemTot;
 		}
 	}
+
+    $total = $subtotal + ($subtotal*0.16)
 
 ?>
 
@@ -46,9 +51,11 @@
         <table class="compusTable" border="1" cellspacing="0" cellpadding="5">
             <tr>
                 <th>Subtotal</th>
+                <td>$<?php echo $subtotal ?></td>
             </tr>
             <tr>
                 <th>Total</th>
+                <td>$<?php echo $total ?></td>
             </tr>
         </table>
 </body>

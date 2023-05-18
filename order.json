@@ -1,18 +1,22 @@
 [
 {
     "product": "Eggs with bacon",
-    "price": "$79.00"
+    "price": 79
 },
 {
     "product": "Omelette",
-    "price": "$78.00"
+    "price": 78
 },
 {
-    "product": "Avena",
-    "price": "$40.00"
+    "product": "Waffles",
+    "price": 45
 },
 {
-    "product": "Eggs with bacon",
-    "price": 0
+    "product": "Green juice",
+    "price": 25
+},
+{
+    "product": "Chilaquiles",
+    "price": 25
 }
 ]

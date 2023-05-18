@@ -16,7 +16,7 @@
         function getOrder(){
             echo "<tr>";
             echo "<td>$this->product</td>";
-            echo "<td>$this->price</td>";
+            echo "<td>\$$this->price</td>";
             echo "</tr>";
         }
 
