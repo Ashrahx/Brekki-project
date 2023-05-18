@@ -128,10 +128,10 @@
 				</div>
 
 				<div class="my-account">
-					<p class="title-footer">My account</p>
+					<p class="title-footer">Register</p>
 
 					<ul>
-						<li><a href="#">Order historial</a></li>
+						<li><a href="./login/register.html">Buy now</a></li>
 					</ul>
 				</div>
 

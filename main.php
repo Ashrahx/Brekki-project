@@ -631,16 +631,16 @@ if (!isset($_SESSION['username'])) {
 					<p class="title-footer">My account</p>
 
 					<ul>
-						<li><a href="#">Ordenes history</a></li>
+						<li><a href="./cart.php">Ordenes history</a></li>
 					</ul>
 				</div>
 
 				<div class="social-icons">
 					<p class="title-footer">Social medias</p>
 					<br>
-					<a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
-					<a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
-					<a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+					<a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+					<a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+					<a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
 				</div>
 			</div>
 
