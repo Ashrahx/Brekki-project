@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  # Nombre del servicio
+  app:
+    # Construye la imagen usando el Dockerfile del directorio actual ('.')
+    build: .
+    # Mapea el puerto 8080 de tu máquina al puerto 8000 del contenedor
+    ports:
+      - "8080:8000"
+    # Sincroniza la carpeta actual ('.') con /var/www/html en el contenedor
+    # Tus cambios en el código se reflejan al instante.
+    volumes:
+      - .:/var/www/html
